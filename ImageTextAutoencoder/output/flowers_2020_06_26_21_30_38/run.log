@@ -1,0 +1,2918 @@
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.3663, 0.4087, 0.2896, 0.4160, 0.4145, 0.2191, 0.2505, 0.3451, 0.4137,
+        0.4924, 0.2401, 0.3107, 0.1863, 0.2215, 0.3641, 0.5257, 0.4066, 0.4985,
+        0.2833, 0.4232, 0.3500, 0.2941, 0.4083, 0.4893, 0.4542, 0.3003, 0.2375,
+        0.2964, 0.3964, 0.3238, 0.2887, 0.3784], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0094, 0.0083, 0.0105, 0.0087, 0.0066, 0.0106, 0.0100, 0.0096, 0.0109,
+        0.0049, 0.0037, 0.0064, 0.0045, 0.0091, 0.0065, 0.0067, 0.0029, 0.0051,
+        0.0081, 0.0036, 0.0066, 0.0065, 0.0067, 0.0088, 0.0126, 0.0097, 0.0088,
+        0.0043, 0.0108, 0.0086, 0.0093, 0.0035], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.0251, 0.0261, 0.0254, 0.0248, 0.0268, 0.0246, 0.0257, 0.0258, 0.0243,
+        0.0251, 0.0252, 0.0250, 0.0265, 0.0253, 0.0257, 0.0251, 0.0244, 0.0242,
+        0.0254, 0.0269, 0.0254, 0.0266, 0.0250, 0.0244, 0.0261, 0.0246, 0.0264,
+        0.0248, 0.0256, 0.0254, 0.0246, 0.0264], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([-0.0008, -0.0007, -0.0008, -0.0008, -0.0008, -0.0008, -0.0007, -0.0008,
+        -0.0008, -0.0008, -0.0007, -0.0008, -0.0008, -0.0008, -0.0008, -0.0008,
+        -0.0008, -0.0008, -0.0008, -0.0007, -0.0008, -0.0008, -0.0007, -0.0008,
+        -0.0007, -0.0008, -0.0008, -0.0008, -0.0008, -0.0008, -0.0008, -0.0008],
+       device='cuda:0', grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.0520, 0.0504, 0.0514, 0.0521, 0.0521, 0.0498, 0.0510, 0.0530, 0.0513,
+        0.0514, 0.0508, 0.0504, 0.0507, 0.0527, 0.0519, 0.0490, 0.0493, 0.0501,
+        0.0510, 0.0503, 0.0502, 0.0494, 0.0506, 0.0506, 0.0498, 0.0498, 0.0508,
+        0.0499, 0.0505, 0.0512, 0.0508, 0.0498], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([-0.0010, -0.0009, -0.0010, -0.0009, -0.0009, -0.0009, -0.0009, -0.0009,
+        -0.0009, -0.0010, -0.0010, -0.0010, -0.0009, -0.0009, -0.0009, -0.0010,
+        -0.0009, -0.0010, -0.0009, -0.0010, -0.0009, -0.0009, -0.0009, -0.0010,
+        -0.0010, -0.0010, -0.0010, -0.0009, -0.0010, -0.0009, -0.0010, -0.0009],
+       device='cuda:0', grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.0788, 0.0781, 0.0779, 0.0778, 0.0756, 0.0788, 0.0781, 0.0794, 0.0768,
+        0.0776, 0.0792, 0.0783, 0.0774, 0.0775, 0.0766, 0.0771, 0.0774, 0.0777,
+        0.0768, 0.0789, 0.0778, 0.0778, 0.0768, 0.0794, 0.0789, 0.0762, 0.0794,
+        0.0771, 0.0772, 0.0766, 0.0781, 0.0770], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([-0.0012, -0.0012, -0.0012, -0.0012, -0.0012, -0.0012, -0.0012, -0.0013,
+        -0.0012, -0.0012, -0.0013, -0.0012, -0.0012, -0.0012, -0.0011, -0.0012,
+        -0.0013, -0.0012, -0.0012, -0.0012, -0.0011, -0.0012, -0.0012, -0.0012,
+        -0.0012, -0.0013, -0.0012, -0.0012, -0.0012, -0.0011, -0.0012, -0.0012],
+       device='cuda:0', grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.1094, 0.1080, 0.1102, 0.1097, 0.1111, 0.1109, 0.1083, 0.1113, 0.1083,
+        0.1072, 0.1097, 0.1096, 0.1085, 0.1104, 0.1098, 0.1097, 0.1102, 0.1082,
+        0.1125, 0.1078, 0.1097, 0.1112, 0.1101, 0.1082, 0.1101, 0.1114, 0.1090,
+        0.1116, 0.1094, 0.1110, 0.1091, 0.1109], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([-0.0015, -0.0016, -0.0015, -0.0015, -0.0015, -0.0015, -0.0015, -0.0015,
+        -0.0016, -0.0014, -0.0015, -0.0015, -0.0015, -0.0015, -0.0015, -0.0015,
+        -0.0015, -0.0015, -0.0015, -0.0015, -0.0015, -0.0015, -0.0015, -0.0015,
+        -0.0015, -0.0015, -0.0015, -0.0015, -0.0015, -0.0015, -0.0015, -0.0015],
+       device='cuda:0', grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.1109, 0.1089, 0.1106, 0.1094, 0.1101, 0.1096, 0.1110, 0.1070, 0.1092,
+        0.1090, 0.1102, 0.1109, 0.1075, 0.1088, 0.1119, 0.1098, 0.1078, 0.1107,
+        0.1087, 0.1097, 0.1124, 0.1107, 0.1112, 0.1092, 0.1124, 0.1104, 0.1096,
+        0.1068, 0.1101, 0.1097, 0.1102, 0.1089], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0021, 0.0019, 0.0020, 0.0020, 0.0022, 0.0022, 0.0021, 0.0021, 0.0023,
+        0.0019, 0.0023, 0.0020, 0.0018, 0.0019, 0.0022, 0.0019, 0.0021, 0.0020,
+        0.0021, 0.0018, 0.0019, 0.0021, 0.0019, 0.0020, 0.0022, 0.0018, 0.0018,
+        0.0021, 0.0021, 0.0020, 0.0020, 0.0019], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.1482, 0.1489, 0.1522, 0.1510, 0.1478, 0.1480, 0.1504, 0.1482, 0.1482,
+        0.1504, 0.1499, 0.1478, 0.1492, 0.1481, 0.1479, 0.1475, 0.1524, 0.1489,
+        0.1482, 0.1507, 0.1493, 0.1512, 0.1488, 0.1486, 0.1475, 0.1481, 0.1498,
+        0.1499, 0.1479, 0.1487, 0.1493, 0.1490], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0020, 0.0021, 0.0022, 0.0023, 0.0020, 0.0021, 0.0022, 0.0023, 0.0018,
+        0.0021, 0.0021, 0.0020, 0.0024, 0.0021, 0.0022, 0.0024, 0.0020, 0.0021,
+        0.0022, 0.0023, 0.0023, 0.0020, 0.0019, 0.0023, 0.0022, 0.0023, 0.0019,
+        0.0021, 0.0023, 0.0021, 0.0021, 0.0019], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.1968, 0.1963, 0.1968, 0.1959, 0.1951, 0.1952, 0.1948, 0.1962, 0.1976,
+        0.1930, 0.1956, 0.1962, 0.1976, 0.1968, 0.1938, 0.1927, 0.1974, 0.1952,
+        0.1958, 0.1965, 0.1957, 0.1979, 0.1965, 0.1936, 0.1935, 0.1968, 0.1965,
+        0.1928, 0.1956, 0.1981, 0.1932, 0.1963], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0024, 0.0023, 0.0023, 0.0024, 0.0024, 0.0023, 0.0020, 0.0023, 0.0024,
+        0.0021, 0.0022, 0.0023, 0.0021, 0.0021, 0.0022, 0.0021, 0.0023, 0.0021,
+        0.0019, 0.0020, 0.0024, 0.0023, 0.0021, 0.0025, 0.0019, 0.0017, 0.0021,
+        0.0024, 0.0019, 0.0025, 0.0023, 0.0024], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.2517, 0.2441, 0.2474, 0.2488, 0.2520, 0.2473, 0.2489, 0.2488, 0.2483,
+        0.2476, 0.2483, 0.2481, 0.2451, 0.2498, 0.2488, 0.2468, 0.2482, 0.2468,
+        0.2497, 0.2490, 0.2500, 0.2475, 0.2500, 0.2522, 0.2521, 0.2518, 0.2470,
+        0.2492, 0.2490, 0.2482, 0.2488, 0.2454], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0027, 0.0022, 0.0022, 0.0024, 0.0025, 0.0023, 0.0023, 0.0024, 0.0019,
+        0.0023, 0.0020, 0.0029, 0.0028, 0.0022, 0.0024, 0.0023, 0.0026, 0.0026,
+        0.0027, 0.0026, 0.0022, 0.0025, 0.0022, 0.0025, 0.0025, 0.0023, 0.0026,
+        0.0027, 0.0024, 0.0022, 0.0023, 0.0027], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.3112, 0.3104, 0.3080, 0.3089, 0.3135, 0.3084, 0.3104, 0.3076, 0.3100,
+        0.3064, 0.3076, 0.3086, 0.3108, 0.3103, 0.3087, 0.3124, 0.3098, 0.3095,
+        0.3094, 0.3105, 0.3097, 0.3076, 0.3115, 0.3115, 0.3092, 0.3083, 0.3080,
+        0.3113, 0.3099, 0.3118, 0.3111, 0.3101], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0026, 0.0025, 0.0025, 0.0027, 0.0023, 0.0024, 0.0027, 0.0025, 0.0021,
+        0.0024, 0.0025, 0.0027, 0.0028, 0.0022, 0.0026, 0.0024, 0.0025, 0.0022,
+        0.0026, 0.0022, 0.0023, 0.0023, 0.0024, 0.0023, 0.0025, 0.0028, 0.0027,
+        0.0021, 0.0023, 0.0024, 0.0023, 0.0028], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.3113, 0.3088, 0.3079, 0.3107, 0.3108, 0.3110, 0.3086, 0.3117, 0.3070,
+        0.3089, 0.3081, 0.3080, 0.3106, 0.3093, 0.3103, 0.3078, 0.3111, 0.3095,
+        0.3087, 0.3100, 0.3066, 0.3098, 0.3097, 0.3109, 0.3070, 0.3090, 0.3064,
+        0.3106, 0.3088, 0.3092, 0.3091, 0.3048], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0134, 0.0135, 0.0120, 0.0141, 0.0135, 0.0118, 0.0144, 0.0137, 0.0140,
+        0.0132, 0.0125, 0.0134, 0.0141, 0.0144, 0.0136, 0.0127, 0.0142, 0.0150,
+        0.0131, 0.0127, 0.0132, 0.0130, 0.0139, 0.0128, 0.0132, 0.0139, 0.0144,
+        0.0127, 0.0127, 0.0126, 0.0144, 0.0130], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.3772, 0.3725, 0.3770, 0.3742, 0.3755, 0.3782, 0.3743, 0.3766, 0.3728,
+        0.3781, 0.3733, 0.3735, 0.3721, 0.3758, 0.3763, 0.3751, 0.3734, 0.3766,
+        0.3763, 0.3745, 0.3732, 0.3766, 0.3765, 0.3731, 0.3754, 0.3758, 0.3784,
+        0.3724, 0.3776, 0.3708, 0.3732, 0.3753], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0142, 0.0143, 0.0152, 0.0154, 0.0145, 0.0149, 0.0138, 0.0145, 0.0150,
+        0.0146, 0.0158, 0.0153, 0.0146, 0.0148, 0.0149, 0.0162, 0.0156, 0.0143,
+        0.0151, 0.0147, 0.0154, 0.0149, 0.0153, 0.0157, 0.0150, 0.0147, 0.0148,
+        0.0154, 0.0146, 0.0154, 0.0153, 0.0143], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.4441, 0.4465, 0.4461, 0.4420, 0.4471, 0.4487, 0.4477, 0.4489, 0.4464,
+        0.4466, 0.4444, 0.4473, 0.4421, 0.4437, 0.4493, 0.4404, 0.4482, 0.4454,
+        0.4407, 0.4502, 0.4453, 0.4477, 0.4486, 0.4489, 0.4456, 0.4415, 0.4477,
+        0.4473, 0.4477, 0.4445, 0.4454, 0.4458], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0165, 0.0166, 0.0178, 0.0161, 0.0160, 0.0172, 0.0169, 0.0170, 0.0164,
+        0.0176, 0.0175, 0.0168, 0.0170, 0.0177, 0.0153, 0.0154, 0.0175, 0.0170,
+        0.0170, 0.0160, 0.0171, 0.0168, 0.0177, 0.0161, 0.0180, 0.0173, 0.0168,
+        0.0150, 0.0169, 0.0165, 0.0168, 0.0174], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.5267, 0.5219, 0.5221, 0.5179, 0.5202, 0.5203, 0.5212, 0.5261, 0.5225,
+        0.5201, 0.5203, 0.5151, 0.5197, 0.5199, 0.5175, 0.5196, 0.5206, 0.5188,
+        0.5194, 0.5192, 0.5192, 0.5203, 0.5223, 0.5192, 0.5225, 0.5190, 0.5268,
+        0.5215, 0.5208, 0.5216, 0.5164, 0.5189], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0187, 0.0179, 0.0185, 0.0193, 0.0176, 0.0186, 0.0194, 0.0184, 0.0202,
+        0.0191, 0.0201, 0.0180, 0.0194, 0.0198, 0.0192, 0.0178, 0.0187, 0.0181,
+        0.0189, 0.0197, 0.0177, 0.0174, 0.0171, 0.0182, 0.0196, 0.0201, 0.0175,
+        0.0179, 0.0193, 0.0191, 0.0187, 0.0190], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.6002, 0.6000, 0.5984, 0.6052, 0.6059, 0.6017, 0.6034, 0.5977, 0.5956,
+        0.6005, 0.6069, 0.6003, 0.6002, 0.6008, 0.5921, 0.5994, 0.6025, 0.6024,
+        0.6036, 0.6000, 0.6001, 0.6006, 0.5935, 0.5976, 0.5981, 0.6054, 0.5978,
+        0.5953, 0.6003, 0.6010, 0.6017, 0.5986], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0212, 0.0200, 0.0196, 0.0223, 0.0219, 0.0214, 0.0186, 0.0197, 0.0188,
+        0.0215, 0.0202, 0.0210, 0.0198, 0.0210, 0.0210, 0.0217, 0.0219, 0.0220,
+        0.0203, 0.0200, 0.0194, 0.0220, 0.0199, 0.0200, 0.0206, 0.0200, 0.0217,
+        0.0207, 0.0216, 0.0205, 0.0203, 0.0210], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.5987, 0.5974, 0.6042, 0.6023, 0.6000, 0.6021, 0.5996, 0.6011, 0.6018,
+        0.5919, 0.6005, 0.6063, 0.5986, 0.5989, 0.6015, 0.5974, 0.5904, 0.6059,
+        0.5934, 0.6039, 0.5951, 0.6000, 0.6059, 0.6040, 0.6001, 0.6020, 0.5993,
+        0.6014, 0.6027, 0.5997, 0.6020, 0.6046], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0531, 0.0548, 0.0582, 0.0544, 0.0583, 0.0547, 0.0572, 0.0553, 0.0553,
+        0.0535, 0.0551, 0.0612, 0.0548, 0.0589, 0.0541, 0.0546, 0.0559, 0.0577,
+        0.0526, 0.0545, 0.0550, 0.0554, 0.0570, 0.0591, 0.0546, 0.0589, 0.0554,
+        0.0587, 0.0591, 0.0561, 0.0604, 0.0519], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.6721, 0.6771, 0.6735, 0.6773, 0.6779, 0.6749, 0.6796, 0.6700, 0.6694,
+        0.6759, 0.6711, 0.6784, 0.6747, 0.6803, 0.6779, 0.6775, 0.6757, 0.6789,
+        0.6768, 0.6806, 0.6673, 0.6815, 0.6768, 0.6818, 0.6796, 0.6751, 0.6762,
+        0.6796, 0.6813, 0.6768, 0.6763, 0.6768], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0665, 0.0643, 0.0597, 0.0598, 0.0648, 0.0654, 0.0659, 0.0591, 0.0629,
+        0.0616, 0.0589, 0.0590, 0.0637, 0.0660, 0.0607, 0.0606, 0.0644, 0.0650,
+        0.0597, 0.0616, 0.0613, 0.0623, 0.0626, 0.0628, 0.0605, 0.0632, 0.0612,
+        0.0652, 0.0562, 0.0595, 0.0654, 0.0598], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.7620, 0.7460, 0.7558, 0.7530, 0.7572, 0.7525, 0.7515, 0.7567, 0.7569,
+        0.7538, 0.7500, 0.7549, 0.7564, 0.7523, 0.7587, 0.7566, 0.7535, 0.7450,
+        0.7528, 0.7557, 0.7513, 0.7598, 0.7553, 0.7456, 0.7525, 0.7602, 0.7588,
+        0.7496, 0.7604, 0.7545, 0.7561, 0.7479], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0668, 0.0650, 0.0696, 0.0717, 0.0647, 0.0702, 0.0639, 0.0660, 0.0695,
+        0.0660, 0.0708, 0.0712, 0.0662, 0.0716, 0.0684, 0.0687, 0.0640, 0.0663,
+        0.0640, 0.0693, 0.0649, 0.0672, 0.0681, 0.0719, 0.0689, 0.0649, 0.0650,
+        0.0710, 0.0617, 0.0652, 0.0679, 0.0638], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.8348, 0.8317, 0.8241, 0.8326, 0.8294, 0.8387, 0.8335, 0.8334, 0.8281,
+        0.8353, 0.8347, 0.8331, 0.8334, 0.8326, 0.8314, 0.8324, 0.8351, 0.8316,
+        0.8314, 0.8353, 0.8334, 0.8336, 0.8384, 0.8337, 0.8402, 0.8306, 0.8366,
+        0.8331, 0.8244, 0.8384, 0.8336, 0.8263], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0687, 0.0728, 0.0752, 0.0690, 0.0701, 0.0736, 0.0726, 0.0748, 0.0684,
+        0.0732, 0.0760, 0.0675, 0.0712, 0.0721, 0.0689, 0.0690, 0.0670, 0.0675,
+        0.0778, 0.0731, 0.0758, 0.0731, 0.0705, 0.0718, 0.0734, 0.0703, 0.0705,
+        0.0731, 0.0698, 0.0745, 0.0709, 0.0689], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.9155, 0.9136, 0.9188, 0.9122, 0.9191, 0.9170, 0.9170, 0.9103, 0.9176,
+        0.9132, 0.9136, 0.9157, 0.9100, 0.9128, 0.9129, 0.9142, 0.9050, 0.9146,
+        0.9163, 0.9152, 0.9114, 0.9143, 0.9129, 0.9159, 0.9150, 0.9179, 0.9143,
+        0.9183, 0.9095, 0.9169, 0.9161, 0.9129], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0809, 0.0731, 0.0828, 0.0736, 0.0739, 0.0708, 0.0773, 0.0779, 0.0814,
+        0.0788, 0.0751, 0.0702, 0.0732, 0.0810, 0.0790, 0.0805, 0.0741, 0.0761,
+        0.0744, 0.0805, 0.0743, 0.0783, 0.0743, 0.0735, 0.0709, 0.0793, 0.0813,
+        0.0794, 0.0753, 0.0826, 0.0732, 0.0730], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.9176, 0.9111, 0.9132, 0.9132, 0.9111, 0.9122, 0.9095, 0.9170, 0.9175,
+        0.9153, 0.9198, 0.9182, 0.9160, 0.9161, 0.9148, 0.9143, 0.9123, 0.9139,
+        0.9146, 0.9160, 0.9188, 0.9171, 0.9160, 0.9115, 0.9178, 0.9144, 0.9192,
+        0.9189, 0.9186, 0.9096, 0.9160, 0.9112], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.1616, 0.1795, 0.1832, 0.1634, 0.1788, 0.1690, 0.1799, 0.1625, 0.1651,
+        0.1609, 0.1833, 0.1821, 0.1617, 0.1635, 0.1789, 0.1794, 0.1764, 0.1838,
+        0.1791, 0.1610, 0.1648, 0.1680, 0.1608, 0.1703, 0.1661, 0.1684, 0.1747,
+        0.1790, 0.1605, 0.1625, 0.1624, 0.1739], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.9675, 0.9725, 0.9704, 0.9752, 0.9713, 0.9724, 0.9748, 0.9719, 0.9721,
+        0.9727, 0.9659, 0.9753, 0.9736, 0.9606, 0.9731, 0.9712, 0.9712, 0.9641,
+        0.9752, 0.9738, 0.9726, 0.9739, 0.9770, 0.9655, 0.9725, 0.9699, 0.9776,
+        0.9764, 0.9684, 0.9666, 0.9675, 0.9777], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.1808, 0.1810, 0.1872, 0.1614, 0.1700, 0.1684, 0.1678, 0.1769, 0.1841,
+        0.1694, 0.1815, 0.1955, 0.1869, 0.1685, 0.1670, 0.1849, 0.1742, 0.1693,
+        0.1813, 0.1695, 0.1556, 0.1813, 0.1884, 0.1830, 0.1766, 0.1818, 0.1663,
+        0.1777, 0.1737, 0.1852, 0.1776, 0.1736], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([1.0294, 1.0268, 1.0339, 1.0332, 1.0354, 1.0334, 1.0395, 1.0364, 1.0317,
+        1.0301, 1.0336, 1.0351, 1.0279, 1.0291, 1.0335, 1.0333, 1.0324, 1.0241,
+        1.0334, 1.0317, 1.0295, 1.0300, 1.0354, 1.0288, 1.0311, 1.0268, 1.0294,
+        1.0277, 1.0369, 1.0248, 1.0307, 1.0315], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.1912, 0.1781, 0.1890, 0.1735, 0.1858, 0.1876, 0.1645, 0.1734, 0.1887,
+        0.1890, 0.1852, 0.1801, 0.1922, 0.1828, 0.1770, 0.1881, 0.1905, 0.1927,
+        0.1866, 0.1750, 0.1782, 0.1753, 0.1920, 0.1878, 0.2009, 0.1923, 0.1672,
+        0.1859, 0.1722, 0.1854, 0.1738, 0.1940], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([1.0898, 1.0870, 1.0793, 1.0910, 1.0922, 1.0798, 1.0859, 1.0811, 1.0914,
+        1.0781, 1.0936, 1.0927, 1.0941, 1.0889, 1.0875, 1.0924, 1.0864, 1.0878,
+        1.0927, 1.0951, 1.0871, 1.0896, 1.0919, 1.0864, 1.0936, 1.0853, 1.0810,
+        1.0901, 1.0887, 1.0846, 1.0897, 1.0836], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.1952, 0.1940, 0.1847, 0.1757, 0.1873, 0.1872, 0.1827, 0.1818, 0.1799,
+        0.2064, 0.1913, 0.1962, 0.1845, 0.1831, 0.1893, 0.1776, 0.1801, 0.1781,
+        0.1992, 0.1869, 0.1888, 0.1869, 0.1926, 0.1892, 0.1776, 0.1805, 0.1772,
+        0.1972, 0.1831, 0.1856, 0.1730, 0.1635], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([1.1412, 1.1453, 1.1451, 1.1404, 1.1385, 1.1440, 1.1363, 1.1364, 1.1499,
+        1.1445, 1.1462, 1.1494, 1.1425, 1.1444, 1.1307, 1.1409, 1.1396, 1.1434,
+        1.1349, 1.1444, 1.1436, 1.1421, 1.1352, 1.1449, 1.1402, 1.1405, 1.1439,
+        1.1441, 1.1470, 1.1436, 1.1369, 1.1407], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.1747, 0.1998, 0.2070, 0.2032, 0.1912, 0.1837, 0.1901, 0.1912, 0.1816,
+        0.1878, 0.1934, 0.1837, 0.1809, 0.1841, 0.2011, 0.1707, 0.1866, 0.1798,
+        0.1873, 0.1830, 0.2028, 0.2013, 0.1944, 0.1897, 0.1953, 0.1781, 0.1814,
+        0.1861, 0.1970, 0.1789, 0.2060, 0.1819], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([1.1436, 1.1470, 1.1473, 1.1427, 1.1395, 1.1439, 1.1429, 1.1444, 1.1464,
+        1.1377, 1.1447, 1.1305, 1.1448, 1.1389, 1.1359, 1.1444, 1.1466, 1.1400,
+        1.1441, 1.1450, 1.1437, 1.1381, 1.1461, 1.1404, 1.1404, 1.1467, 1.1453,
+        1.1471, 1.1474, 1.1438, 1.1450, 1.1446], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.3735, 0.3888, 0.3705, 0.3827, 0.4026, 0.3893, 0.3934, 0.3860, 0.3771,
+        0.3617, 0.3888, 0.3279, 0.3928, 0.3599, 0.3893, 0.3715, 0.3561, 0.4002,
+        0.3621, 0.4021, 0.4029, 0.3636, 0.3971, 0.3589, 0.3608, 0.3569, 0.3720,
+        0.4004, 0.3647, 0.3917, 0.4022, 0.3638], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([1.1439, 1.1389, 1.1436, 1.1393, 1.1422, 1.1442, 1.1404, 1.1377, 1.1385,
+        1.1389, 1.1276, 1.1370, 1.1291, 1.1396, 1.1254, 1.1348, 1.1398, 1.1367,
+        1.1417, 1.1409, 1.1413, 1.1343, 1.1344, 1.1433, 1.1287, 1.1456, 1.1373,
+        1.1401, 1.1427, 1.1460, 1.1367, 1.1374], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.3435, 0.3399, 0.3386, 0.3763, 0.3774, 0.3425, 0.3699, 0.3652, 0.3857,
+        0.3405, 0.3370, 0.3440, 0.3452, 0.3393, 0.3420, 0.3519, 0.3620, 0.3430,
+        0.3412, 0.3593, 0.3364, 0.3209, 0.3835, 0.3405, 0.3734, 0.3622, 0.3667,
+        0.3470, 0.3417, 0.3598, 0.3700, 0.3318], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([1.1548, 1.1472, 1.1422, 1.1368, 1.1488, 1.1358, 1.1390, 1.1502, 1.1431,
+        1.1482, 1.1491, 1.1410, 1.1445, 1.1528, 1.1512, 1.1467, 1.1462, 1.1488,
+        1.1410, 1.1469, 1.1426, 1.1453, 1.1508, 1.1451, 1.1433, 1.1473, 1.1490,
+        1.1442, 1.1482, 1.1425, 1.1453, 1.1438], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.3142, 0.3725, 0.3479, 0.3385, 0.3545, 0.3483, 0.3558, 0.3514, 0.3287,
+        0.3643, 0.3209, 0.3425, 0.3259, 0.3411, 0.3448, 0.3220, 0.3372, 0.3167,
+        0.3410, 0.3421, 0.3189, 0.3683, 0.3664, 0.3395, 0.3425, 0.3444, 0.3509,
+        0.3579, 0.3250, 0.3394, 0.3238, 0.3267], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([1.1584, 1.1572, 1.1508, 1.1452, 1.1474, 1.1453, 1.1427, 1.1529, 1.1515,
+        1.1485, 1.1398, 1.1503, 1.1572, 1.1450, 1.1479, 1.1571, 1.1528, 1.1444,
+        1.1498, 1.1476, 1.1431, 1.1521, 1.1523, 1.1388, 1.1482, 1.1530, 1.1459,
+        1.1526, 1.1532, 1.1453, 1.1510, 1.1505], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.3043, 0.3230, 0.3076, 0.3235, 0.3415, 0.3202, 0.3042, 0.3076, 0.3478,
+        0.3058, 0.3049, 0.3120, 0.3016, 0.3242, 0.3104, 0.3020, 0.3189, 0.3062,
+        0.3249, 0.3321, 0.2970, 0.3325, 0.3119, 0.3266, 0.3181, 0.3046, 0.3274,
+        0.2993, 0.3266, 0.3128, 0.3284, 0.3110], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([1.1593, 1.1642, 1.1487, 1.1650, 1.1623, 1.1629, 1.1677, 1.1578, 1.1647,
+        1.1621, 1.1526, 1.1463, 1.1666, 1.1502, 1.1604, 1.1593, 1.1588, 1.1601,
+        1.1617, 1.1593, 1.1582, 1.1632, 1.1622, 1.1563, 1.1527, 1.1576, 1.1618,
+        1.1575, 1.1636, 1.1632, 1.1666, 1.1629], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.3036, 0.3203, 0.2958, 0.2787, 0.3078, 0.2939, 0.2830, 0.3155, 0.3007,
+        0.3063, 0.3056, 0.3286, 0.3071, 0.2844, 0.2936, 0.2930, 0.3420, 0.3230,
+        0.2664, 0.3274, 0.3239, 0.3210, 0.2996, 0.3103, 0.3143, 0.3121, 0.2997,
+        0.2901, 0.3254, 0.3146, 0.2801, 0.2976], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([1.1649, 1.1594, 1.1527, 1.1668, 1.1484, 1.1473, 1.1617, 1.1521, 1.1645,
+        1.1592, 1.1518, 1.1632, 1.1562, 1.1624, 1.1612, 1.1606, 1.1661, 1.1487,
+        1.1606, 1.1497, 1.1670, 1.1565, 1.1640, 1.1625, 1.1501, 1.1638, 1.1518,
+        1.1504, 1.1602, 1.1630, 1.1555, 1.1515], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.5313, 0.5098, 0.4667, 0.5528, 0.5709, 0.5399, 0.5520, 0.5373, 0.5568,
+        0.5487, 0.5870, 0.5811, 0.5616, 0.5710, 0.5716, 0.4707, 0.5365, 0.6005,
+        0.5697, 0.5278, 0.5951, 0.5698, 0.5092, 0.5672, 0.5698, 0.5416, 0.5789,
+        0.5562, 0.5477, 0.5832, 0.5332, 0.5815], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([1.0527, 1.0567, 1.0605, 1.0626, 1.0564, 1.0603, 1.0594, 1.0715, 1.0514,
+        1.0589, 1.0595, 1.0656, 1.0592, 1.0635, 1.0598, 1.0575, 1.0692, 1.0592,
+        1.0665, 1.0595, 1.0630, 1.0651, 1.0628, 1.0625, 1.0590, 1.0704, 1.0652,
+        1.0674, 1.0646, 1.0641, 1.0599, 1.0648], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.4872, 0.4842, 0.4489, 0.5067, 0.4919, 0.4296, 0.4257, 0.4702, 0.4786,
+        0.4944, 0.4425, 0.4355, 0.4840, 0.4758, 0.4445, 0.4784, 0.4681, 0.4447,
+        0.4597, 0.4563, 0.4549, 0.4391, 0.4598, 0.4916, 0.4642, 0.4698, 0.4180,
+        0.4643, 0.4375, 0.4834, 0.4568, 0.5032], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([1.0021, 1.0081, 0.9957, 0.9990, 0.9914, 0.9979, 1.0048, 1.0041, 1.0005,
+        0.9957, 1.0003, 0.9944, 1.0009, 0.9926, 1.0007, 0.9954, 1.0016, 1.0014,
+        0.9978, 0.9997, 1.0106, 1.0048, 1.0036, 0.9979, 1.0016, 1.0098, 1.0030,
+        1.0042, 1.0023, 0.9971, 1.0011, 1.0039], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.4119, 0.3588, 0.3991, 0.3743, 0.3738, 0.3956, 0.4026, 0.3997, 0.4016,
+        0.4238, 0.3724, 0.4187, 0.4222, 0.3904, 0.3717, 0.4120, 0.3864, 0.4087,
+        0.3915, 0.3590, 0.3725, 0.4071, 0.4329, 0.3684, 0.3705, 0.3870, 0.3729,
+        0.4042, 0.3707, 0.4050, 0.4161, 0.3754], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.9702, 0.9585, 0.9657, 0.9666, 0.9690, 0.9558, 0.9605, 0.9692, 0.9532,
+        0.9621, 0.9703, 0.9663, 0.9713, 0.9623, 0.9615, 0.9670, 0.9723, 0.9703,
+        0.9674, 0.9590, 0.9656, 0.9642, 0.9643, 0.9618, 0.9689, 0.9627, 0.9769,
+        0.9633, 0.9732, 0.9620, 0.9629, 0.9693], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.3194, 0.3611, 0.3512, 0.3509, 0.3249, 0.3398, 0.3005, 0.3112, 0.3560,
+        0.3319, 0.3391, 0.3622, 0.3407, 0.3413, 0.3292, 0.3341, 0.3567, 0.3236,
+        0.3181, 0.3446, 0.3271, 0.3524, 0.3253, 0.3180, 0.3185, 0.3522, 0.3334,
+        0.3247, 0.3326, 0.3218, 0.3459, 0.3326], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.9313, 0.9489, 0.9396, 0.9512, 0.9442, 0.9476, 0.9428, 0.9567, 0.9508,
+        0.9492, 0.9469, 0.9558, 0.9431, 0.9473, 0.9522, 0.9513, 0.9469, 0.9462,
+        0.9454, 0.9459, 0.9425, 0.9409, 0.9396, 0.9376, 0.9460, 0.9352, 0.9515,
+        0.9569, 0.9436, 0.9491, 0.9598, 0.9538], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.2950, 0.2819, 0.3015, 0.2741, 0.2843, 0.2941, 0.3064, 0.2949, 0.2683,
+        0.2960, 0.3110, 0.2978, 0.2978, 0.2786, 0.2951, 0.2818, 0.3033, 0.2898,
+        0.2811, 0.2836, 0.2833, 0.2973, 0.3052, 0.3090, 0.3010, 0.3057, 0.2825,
+        0.2852, 0.3042, 0.2922, 0.2955, 0.3049], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.9519, 0.9400, 0.9450, 0.9469, 0.9451, 0.9489, 0.9545, 0.9516, 0.9412,
+        0.9561, 0.9474, 0.9505, 0.9463, 0.9515, 0.9446, 0.9523, 0.9411, 0.9451,
+        0.9504, 0.9406, 0.9567, 0.9467, 0.9495, 0.9418, 0.9541, 0.9520, 0.9540,
+        0.9344, 0.9424, 0.9556, 0.9457, 0.9453], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.5048, 0.4863, 0.4901, 0.4908, 0.4767, 0.5050, 0.4885, 0.5158, 0.5210,
+        0.5385, 0.4821, 0.4997, 0.5404, 0.4984, 0.4742, 0.5606, 0.4732, 0.4874,
+        0.5556, 0.5475, 0.4954, 0.5161, 0.4911, 0.5123, 0.5321, 0.4862, 0.4950,
+        0.4936, 0.4724, 0.5214, 0.4858, 0.5265], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.8384, 0.8350, 0.8238, 0.8358, 0.8267, 0.8265, 0.8270, 0.8238, 0.8256,
+        0.8343, 0.8200, 0.8281, 0.8402, 0.8262, 0.8355, 0.8293, 0.8343, 0.8301,
+        0.8414, 0.8278, 0.8290, 0.8327, 0.8262, 0.8241, 0.8256, 0.8300, 0.8263,
+        0.8193, 0.8392, 0.8223, 0.8320, 0.8381], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.3489, 0.3460, 0.3759, 0.3986, 0.3559, 0.3786, 0.3600, 0.3928, 0.3555,
+        0.4067, 0.3748, 0.3548, 0.3570, 0.3690, 0.3854, 0.3691, 0.3650, 0.3893,
+        0.3759, 0.3445, 0.3694, 0.4025, 0.3267, 0.3912, 0.3554, 0.3587, 0.3916,
+        0.3467, 0.3634, 0.3495, 0.4020, 0.3893], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.7677, 0.7644, 0.7626, 0.7632, 0.7789, 0.7570, 0.7740, 0.7580, 0.7676,
+        0.7766, 0.7674, 0.7776, 0.7644, 0.7636, 0.7526, 0.7573, 0.7640, 0.7669,
+        0.7632, 0.7565, 0.7754, 0.7651, 0.7655, 0.7714, 0.7697, 0.7606, 0.7632,
+        0.7625, 0.7608, 0.7602, 0.7658, 0.7659], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.2776, 0.2766, 0.2767, 0.2676, 0.2652, 0.2640, 0.2890, 0.2696, 0.2818,
+        0.3085, 0.2816, 0.2971, 0.2810, 0.3042, 0.2642, 0.2695, 0.2668, 0.2777,
+        0.2731, 0.2930, 0.2623, 0.2625, 0.2667, 0.2583, 0.2789, 0.2792, 0.2693,
+        0.2700, 0.2852, 0.2933, 0.2774, 0.2734], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.7177, 0.7355, 0.7211, 0.7380, 0.7197, 0.7199, 0.7208, 0.7198, 0.7277,
+        0.7224, 0.7242, 0.7436, 0.7266, 0.7179, 0.7249, 0.7327, 0.7274, 0.7259,
+        0.7240, 0.7251, 0.7214, 0.7300, 0.7242, 0.7415, 0.7262, 0.7261, 0.7367,
+        0.7291, 0.7338, 0.7346, 0.7314, 0.7316], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.1927, 0.1980, 0.1968, 0.1924, 0.1961, 0.2036, 0.2063, 0.2126, 0.2191,
+        0.2223, 0.2072, 0.2182, 0.2157, 0.2023, 0.2012, 0.2063, 0.2213, 0.1980,
+        0.2172, 0.2133, 0.2190, 0.2047, 0.1978, 0.1995, 0.2200, 0.1985, 0.2168,
+        0.2188, 0.2098, 0.1974, 0.2192, 0.2049], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.7037, 0.7014, 0.7052, 0.7114, 0.7196, 0.6989, 0.6981, 0.7128, 0.7053,
+        0.7128, 0.6939, 0.7042, 0.6933, 0.7186, 0.7046, 0.7063, 0.6977, 0.6970,
+        0.7090, 0.7197, 0.7039, 0.7077, 0.6965, 0.6948, 0.7054, 0.6990, 0.7145,
+        0.7039, 0.7045, 0.7002, 0.7108, 0.7016], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.1416, 0.1271, 0.1463, 0.1469, 0.1449, 0.1318, 0.1373, 0.1429, 0.1407,
+        0.1303, 0.1310, 0.1430, 0.1470, 0.1469, 0.1456, 0.1357, 0.1349, 0.1459,
+        0.1439, 0.1351, 0.1409, 0.1499, 0.1364, 0.1353, 0.1491, 0.1336, 0.1426,
+        0.1350, 0.1542, 0.1461, 0.1324, 0.1481], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.7013, 0.7068, 0.7047, 0.7075, 0.7152, 0.7067, 0.7162, 0.7048, 0.7068,
+        0.7038, 0.7014, 0.7194, 0.6958, 0.6964, 0.7051, 0.7087, 0.6959, 0.7088,
+        0.7119, 0.6973, 0.7011, 0.7022, 0.6988, 0.7205, 0.7073, 0.6915, 0.7149,
+        0.7010, 0.7089, 0.7057, 0.7058, 0.7185], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.3133, 0.2982, 0.3093, 0.2645, 0.3159, 0.3135, 0.3069, 0.2842, 0.2824,
+        0.3127, 0.2938, 0.3109, 0.3166, 0.2784, 0.3036, 0.2965, 0.3069, 0.3233,
+        0.3205, 0.3082, 0.3053, 0.3165, 0.3041, 0.3186, 0.3212, 0.2897, 0.2812,
+        0.3128, 0.3201, 0.2876, 0.2872, 0.2955], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.6091, 0.5942, 0.5990, 0.6018, 0.6092, 0.5969, 0.6073, 0.6013, 0.6095,
+        0.5976, 0.6092, 0.6012, 0.6075, 0.6056, 0.6069, 0.6183, 0.6069, 0.5965,
+        0.6126, 0.5978, 0.6037, 0.6060, 0.5984, 0.6063, 0.6088, 0.6087, 0.6094,
+        0.6014, 0.6130, 0.6058, 0.5929, 0.6210], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.1697, 0.1796, 0.1650, 0.1759, 0.1558, 0.1527, 0.1714, 0.1599, 0.1738,
+        0.1730, 0.1723, 0.1813, 0.1798, 0.1638, 0.1639, 0.1733, 0.1777, 0.1587,
+        0.1862, 0.1666, 0.1671, 0.1725, 0.1757, 0.1584, 0.1663, 0.1672, 0.1755,
+        0.1861, 0.1563, 0.1594, 0.1527, 0.1613], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.5522, 0.5430, 0.5523, 0.5595, 0.5657, 0.5762, 0.5641, 0.5702, 0.5534,
+        0.5675, 0.5594, 0.5811, 0.5720, 0.5624, 0.5650, 0.5683, 0.5619, 0.5663,
+        0.5606, 0.5655, 0.5576, 0.5662, 0.5688, 0.5655, 0.5658, 0.5626, 0.5683,
+        0.5591, 0.5596, 0.5603, 0.5624, 0.5780], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0853, 0.0911, 0.0934, 0.0851, 0.0940, 0.0956, 0.0900, 0.0888, 0.0867,
+        0.0995, 0.0902, 0.0785, 0.0899, 0.0944, 0.0964, 0.0814, 0.0870, 0.0870,
+        0.0847, 0.0920, 0.0909, 0.0858, 0.0906, 0.0966, 0.0840, 0.0872, 0.0825,
+        0.0918, 0.0822, 0.0884, 0.0844, 0.0925], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.5499, 0.5359, 0.5536, 0.5505, 0.5620, 0.5456, 0.5290, 0.5445, 0.5366,
+        0.5468, 0.5462, 0.5439, 0.5392, 0.5489, 0.5638, 0.5610, 0.5382, 0.5597,
+        0.5280, 0.5451, 0.5526, 0.5483, 0.5479, 0.5472, 0.5452, 0.5475, 0.5379,
+        0.5506, 0.5461, 0.5609, 0.5667, 0.5422], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0194, 0.0205, 0.0226, 0.0226, 0.0189, 0.0202, 0.0227, 0.0219, 0.0221,
+        0.0225, 0.0193, 0.0239, 0.0229, 0.0210, 0.0197, 0.0225, 0.0235, 0.0198,
+        0.0227, 0.0186, 0.0197, 0.0189, 0.0215, 0.0206, 0.0233, 0.0192, 0.0191,
+        0.0230, 0.0194, 0.0230, 0.0161, 0.0223], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.5602, 0.5437, 0.5400, 0.5569, 0.5370, 0.5669, 0.5456, 0.5507, 0.5595,
+        0.5473, 0.5436, 0.5669, 0.5582, 0.5522, 0.5432, 0.5693, 0.5546, 0.5518,
+        0.5630, 0.5353, 0.5637, 0.5617, 0.5439, 0.5593, 0.5498, 0.5494, 0.5586,
+        0.5387, 0.5337, 0.5434, 0.5519, 0.5512], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([-0.0345, -0.0353, -0.0342, -0.0356, -0.0342, -0.0341, -0.0356, -0.0315,
+        -0.0366, -0.0357, -0.0341, -0.0345, -0.0354, -0.0330, -0.0362, -0.0341,
+        -0.0360, -0.0353, -0.0337, -0.0335, -0.0336, -0.0325, -0.0355, -0.0360,
+        -0.0339, -0.0340, -0.0333, -0.0357, -0.0338, -0.0345, -0.0333, -0.0322],
+       device='cuda:0', grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.5592, 0.5652, 0.5614, 0.5570, 0.5566, 0.5417, 0.5649, 0.5564, 0.5704,
+        0.5584, 0.5280, 0.5498, 0.5579, 0.5647, 0.5497, 0.5502, 0.5528, 0.5598,
+        0.5714, 0.5532, 0.5473, 0.5554, 0.5492, 0.5515, 0.5549, 0.5537, 0.5518,
+        0.5758, 0.5397, 0.5614, 0.5641, 0.5356], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.1082, 0.1037, 0.1015, 0.1067, 0.1148, 0.1095, 0.1078, 0.1189, 0.1041,
+        0.1042, 0.1106, 0.1093, 0.1030, 0.1057, 0.1191, 0.1145, 0.1111, 0.1036,
+        0.1072, 0.1051, 0.1216, 0.1211, 0.1096, 0.1049, 0.1140, 0.1089, 0.1164,
+        0.0959, 0.1070, 0.1145, 0.1179, 0.1082], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.4578, 0.4876, 0.4678, 0.4503, 0.4546, 0.4601, 0.4739, 0.4699, 0.4737,
+        0.4768, 0.4714, 0.4509, 0.4960, 0.4663, 0.4617, 0.4549, 0.4636, 0.4765,
+        0.4745, 0.4649, 0.4667, 0.4692, 0.4602, 0.4532, 0.4680, 0.4586, 0.4576,
+        0.4817, 0.4553, 0.4484, 0.4762, 0.4663], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([-0.0144, -0.0144, -0.0144, -0.0145, -0.0145, -0.0139, -0.0144, -0.0146,
+        -0.0143, -0.0141, -0.0142, -0.0144, -0.0144, -0.0143, -0.0143, -0.0145,
+        -0.0143, -0.0143, -0.0143, -0.0143, -0.0144, -0.0144, -0.0146, -0.0146,
+        -0.0140, -0.0145, -0.0144, -0.0144, -0.0142, -0.0145, -0.0143, -0.0142],
+       device='cuda:0', grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.4758, 0.4946, 0.5024, 0.4991, 0.4992, 0.4715, 0.4960, 0.4956, 0.4669,
+        0.4855, 0.4849, 0.4854, 0.4869, 0.4758, 0.4978, 0.4766, 0.4761, 0.4889,
+        0.4909, 0.5070, 0.4869, 0.4947, 0.4942, 0.5025, 0.5022, 0.4960, 0.4996,
+        0.4908, 0.4746, 0.4694, 0.4810, 0.4937], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([-0.0382, -0.0357, -0.0351, -0.0357, -0.0365, -0.0361, -0.0350, -0.0353,
+        -0.0357, -0.0377, -0.0358, -0.0379, -0.0383, -0.0359, -0.0380, -0.0382,
+        -0.0379, -0.0371, -0.0352, -0.0368, -0.0371, -0.0365, -0.0376, -0.0376,
+        -0.0336, -0.0368, -0.0361, -0.0360, -0.0348, -0.0351, -0.0362, -0.0366],
+       device='cuda:0', grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.4695, 0.4866, 0.4950, 0.4888, 0.4880, 0.4706, 0.5041, 0.4788, 0.5080,
+        0.4768, 0.4786, 0.4723, 0.4706, 0.4891, 0.4964, 0.4936, 0.5094, 0.4768,
+        0.4879, 0.4879, 0.5003, 0.4792, 0.5020, 0.4913, 0.5000, 0.4933, 0.5131,
+        0.4879, 0.4779, 0.4885, 0.4922, 0.4668], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([-0.0751, -0.0793, -0.0790, -0.0777, -0.0761, -0.0736, -0.0797, -0.0760,
+        -0.0780, -0.0766, -0.0720, -0.0728, -0.0766, -0.0788, -0.0770, -0.0726,
+        -0.0732, -0.0733, -0.0798, -0.0751, -0.0772, -0.0732, -0.0737, -0.0782,
+        -0.0739, -0.0729, -0.0840, -0.0728, -0.0737, -0.0730, -0.0728, -0.0705],
+       device='cuda:0', grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.5411, 0.5574, 0.5451, 0.5498, 0.5457, 0.5404, 0.5377, 0.5604, 0.5516,
+        0.5343, 0.5338, 0.5450, 0.5299, 0.5383, 0.5556, 0.5454, 0.5542, 0.5437,
+        0.5312, 0.5521, 0.5408, 0.5560, 0.5519, 0.5446, 0.5487, 0.5473, 0.5478,
+        0.5324, 0.5453, 0.5356, 0.5441, 0.5473], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([-0.0656, -0.0684, -0.0694, -0.0693, -0.0661, -0.0703, -0.0645, -0.0671,
+        -0.0712, -0.0713, -0.0690, -0.0645, -0.0687, -0.0635, -0.0720, -0.0658,
+        -0.0700, -0.0671, -0.0633, -0.0646, -0.0706, -0.0643, -0.0667, -0.0644,
+        -0.0649, -0.0649, -0.0676, -0.0696, -0.0675, -0.0661, -0.0658, -0.0630],
+       device='cuda:0', grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.5587, 0.5412, 0.5536, 0.5382, 0.5545, 0.5338, 0.5408, 0.5442, 0.5437,
+        0.5624, 0.5479, 0.5334, 0.5477, 0.5526, 0.5493, 0.5343, 0.5467, 0.5556,
+        0.5404, 0.5547, 0.5518, 0.5476, 0.5532, 0.5385, 0.5372, 0.5463, 0.5331,
+        0.5499, 0.5528, 0.5465, 0.5535, 0.5399], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.1647, 0.1437, 0.1436, 0.1526, 0.1447, 0.1560, 0.1632, 0.1453, 0.1460,
+        0.1489, 0.1392, 0.1557, 0.1439, 0.1618, 0.1524, 0.1479, 0.1599, 0.1443,
+        0.1406, 0.1529, 0.1567, 0.1454, 0.1599, 0.1415, 0.1472, 0.1445, 0.1526,
+        0.1501, 0.1472, 0.1516, 0.1647, 0.1538], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.4212, 0.4239, 0.4318, 0.4287, 0.4306, 0.4268, 0.4386, 0.4243, 0.4149,
+        0.4183, 0.4377, 0.4157, 0.4514, 0.4460, 0.4141, 0.4176, 0.4322, 0.4404,
+        0.4261, 0.3938, 0.4016, 0.4090, 0.4258, 0.4403, 0.4310, 0.4220, 0.3929,
+        0.4273, 0.4286, 0.4418, 0.4406, 0.4177], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0046, 0.0059, 0.0059, 0.0055, 0.0068, 0.0066, 0.0048, 0.0072, 0.0043,
+        0.0044, 0.0070, 0.0044, 0.0045, 0.0069, 0.0059, 0.0055, 0.0042, 0.0051,
+        0.0046, 0.0061, 0.0063, 0.0060, 0.0057, 0.0042, 0.0075, 0.0062, 0.0048,
+        0.0066, 0.0038, 0.0046, 0.0044, 0.0057], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.3773, 0.3799, 0.3761, 0.3696, 0.3771, 0.3554, 0.3831, 0.3606, 0.3828,
+        0.3600, 0.3744, 0.3764, 0.3654, 0.3708, 0.3740, 0.3887, 0.3757, 0.3649,
+        0.3597, 0.3788, 0.3686, 0.3939, 0.3809, 0.3776, 0.3834, 0.3802, 0.3881,
+        0.3793, 0.3773, 0.3984, 0.3741, 0.3642], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([-0.0705, -0.0695, -0.0650, -0.0678, -0.0667, -0.0692, -0.0650, -0.0666,
+        -0.0626, -0.0633, -0.0651, -0.0647, -0.0705, -0.0646, -0.0689, -0.0649,
+        -0.0661, -0.0722, -0.0654, -0.0665, -0.0692, -0.0699, -0.0698, -0.0686,
+        -0.0687, -0.0681, -0.0665, -0.0710, -0.0626, -0.0689, -0.0655, -0.0666],
+       device='cuda:0', grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.3779, 0.3722, 0.4023, 0.3984, 0.4038, 0.3856, 0.3842, 0.3928, 0.3942,
+        0.3897, 0.3883, 0.4029, 0.3892, 0.3961, 0.3937, 0.3879, 0.3964, 0.4115,
+        0.3812, 0.4043, 0.3907, 0.3871, 0.3721, 0.3792, 0.3749, 0.3759, 0.3788,
+        0.3916, 0.3938, 0.3854, 0.4023, 0.3840], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([-0.0849, -0.0898, -0.0892, -0.0897, -0.0909, -0.0891, -0.0887, -0.0844,
+        -0.0910, -0.0871, -0.0908, -0.0844, -0.0837, -0.0880, -0.0836, -0.0885,
+        -0.0884, -0.0839, -0.0900, -0.0891, -0.0829, -0.0896, -0.0844, -0.0851,
+        -0.0746, -0.0964, -0.0843, -0.0914, -0.0904, -0.0927, -0.0844, -0.0867],
+       device='cuda:0', grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.4248, 0.4007, 0.4116, 0.4093, 0.4103, 0.3996, 0.3988, 0.4266, 0.4023,
+        0.4275, 0.4134, 0.3938, 0.4183, 0.4064, 0.4202, 0.3982, 0.4021, 0.4292,
+        0.4180, 0.4170, 0.4054, 0.4059, 0.3961, 0.4506, 0.4236, 0.3990, 0.4076,
+        0.4208, 0.4149, 0.4220, 0.4146, 0.3972], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([-0.0997, -0.0946, -0.0999, -0.0987, -0.0980, -0.0974, -0.1006, -0.0881,
+        -0.0978, -0.1013, -0.0965, -0.0948, -0.0922, -0.0968, -0.0941, -0.0942,
+        -0.0897, -0.0969, -0.1006, -0.0920, -0.0986, -0.1026, -0.1025, -0.1029,
+        -0.0942, -0.1039, -0.1026, -0.0986, -0.0944, -0.1029, -0.0998, -0.0930],
+       device='cuda:0', grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.4066, 0.4200, 0.4041, 0.4263, 0.4006, 0.4235, 0.4124, 0.4083, 0.4065,
+        0.4082, 0.4135, 0.4030, 0.4270, 0.4134, 0.4110, 0.4007, 0.4119, 0.4075,
+        0.4048, 0.3941, 0.4118, 0.4293, 0.4120, 0.4218, 0.4240, 0.3985, 0.4136,
+        0.4122, 0.4090, 0.4002, 0.4083, 0.4254], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0923, 0.0974, 0.0995, 0.0956, 0.1013, 0.0920, 0.0976, 0.1075, 0.0951,
+        0.0951, 0.0940, 0.1015, 0.0927, 0.0886, 0.0932, 0.0931, 0.0953, 0.1050,
+        0.0932, 0.1019, 0.0957, 0.0931, 0.0959, 0.0902, 0.0940, 0.0980, 0.0925,
+        0.0930, 0.0945, 0.0908, 0.1005, 0.1048], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.3740, 0.3808, 0.3754, 0.3836, 0.3805, 0.3781, 0.3753, 0.3840, 0.3749,
+        0.3661, 0.3816, 0.3870, 0.3779, 0.3777, 0.3929, 0.3653, 0.3793, 0.3752,
+        0.3803, 0.3762, 0.3675, 0.3585, 0.3739, 0.3781, 0.3793, 0.3664, 0.3731,
+        0.3654, 0.3792, 0.3823, 0.3902, 0.3880], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0462, 0.0448, 0.0464, 0.0457, 0.0443, 0.0436, 0.0409, 0.0471, 0.0453,
+        0.0480, 0.0507, 0.0417, 0.0411, 0.0395, 0.0436, 0.0405, 0.0443, 0.0464,
+        0.0401, 0.0402, 0.0444, 0.0450, 0.0454, 0.0428, 0.0421, 0.0421, 0.0430,
+        0.0439, 0.0424, 0.0399, 0.0435, 0.0432], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.3563, 0.3650, 0.3674, 0.3521, 0.3644, 0.3601, 0.3647, 0.3573, 0.3566,
+        0.3563, 0.3328, 0.3650, 0.3533, 0.3366, 0.3720, 0.3267, 0.3397, 0.3309,
+        0.3503, 0.3584, 0.3525, 0.3501, 0.3463, 0.3618, 0.3787, 0.3486, 0.3523,
+        0.3515, 0.3150, 0.3700, 0.3849, 0.3646], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0020, 0.0045, 0.0010, 0.0023, 0.0023, 0.0028, 0.0033, 0.0038, 0.0047,
+        0.0043, 0.0025, 0.0039, 0.0046, 0.0033, 0.0047, 0.0026, 0.0030, 0.0026,
+        0.0033, 0.0033, 0.0025, 0.0024, 0.0056, 0.0042, 0.0030, 0.0046, 0.0024,
+        0.0051, 0.0051, 0.0023, 0.0020, 0.0039], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.3633, 0.3618, 0.3446, 0.3426, 0.3356, 0.3382, 0.3357, 0.3357, 0.3260,
+        0.3653, 0.3608, 0.3605, 0.3409, 0.3218, 0.3619, 0.3238, 0.3368, 0.3528,
+        0.3335, 0.3518, 0.3660, 0.3484, 0.3550, 0.3444, 0.3262, 0.3613, 0.3551,
+        0.3287, 0.3832, 0.3371, 0.3345, 0.3678], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([-0.0273, -0.0267, -0.0269, -0.0261, -0.0269, -0.0269, -0.0267, -0.0269,
+        -0.0263, -0.0270, -0.0259, -0.0268, -0.0268, -0.0267, -0.0266, -0.0268,
+        -0.0261, -0.0274, -0.0269, -0.0266, -0.0276, -0.0268, -0.0274, -0.0267,
+        -0.0270, -0.0259, -0.0272, -0.0268, -0.0273, -0.0273, -0.0268, -0.0272],
+       device='cuda:0', grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.3801, 0.3397, 0.3331, 0.3599, 0.3461, 0.3860, 0.3469, 0.3431, 0.3671,
+        0.3442, 0.3621, 0.3458, 0.3355, 0.3499, 0.3639, 0.3652, 0.3544, 0.3470,
+        0.3605, 0.3361, 0.3632, 0.3518, 0.3900, 0.3615, 0.3731, 0.3464, 0.3147,
+        0.3518, 0.3650, 0.3414, 0.3485, 0.3496], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([-0.0455, -0.0449, -0.0443, -0.0462, -0.0463, -0.0468, -0.0484, -0.0444,
+        -0.0436, -0.0463, -0.0448, -0.0454, -0.0465, -0.0438, -0.0446, -0.0421,
+        -0.0455, -0.0481, -0.0444, -0.0449, -0.0454, -0.0455, -0.0467, -0.0470,
+        -0.0468, -0.0459, -0.0436, -0.0464, -0.0457, -0.0467, -0.0444, -0.0462],
+       device='cuda:0', grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.3433, 0.3749, 0.3519, 0.3442, 0.3596, 0.3482, 0.3702, 0.3824, 0.3400,
+        0.3571, 0.3528, 0.3523, 0.3489, 0.3508, 0.3486, 0.3486, 0.3515, 0.3661,
+        0.3647, 0.3515, 0.3499, 0.3621, 0.3478, 0.3450, 0.3372, 0.3416, 0.3421,
+        0.3618, 0.3434, 0.3623, 0.3519, 0.3487], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.1387, 0.1344, 0.1394, 0.1431, 0.1519, 0.1480, 0.1337, 0.1360, 0.1362,
+        0.1426, 0.1411, 0.1474, 0.1425, 0.1474, 0.1409, 0.1364, 0.1373, 0.1347,
+        0.1545, 0.1527, 0.1380, 0.1576, 0.1492, 0.1346, 0.1484, 0.1453, 0.1418,
+        0.1517, 0.1487, 0.1453, 0.1472, 0.1384], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.3278, 0.3383, 0.3232, 0.3226, 0.3197, 0.3178, 0.3571, 0.3268, 0.3342,
+        0.3124, 0.3140, 0.3008, 0.3262, 0.3194, 0.3227, 0.3228, 0.3166, 0.3392,
+        0.3259, 0.3331, 0.3128, 0.3050, 0.3250, 0.3304, 0.3090, 0.3007, 0.3008,
+        0.3269, 0.3354, 0.3304, 0.3147, 0.3066], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.1004, 0.0949, 0.1044, 0.1004, 0.1097, 0.0962, 0.1016, 0.1057, 0.1003,
+        0.1007, 0.1092, 0.0946, 0.0941, 0.1031, 0.1039, 0.0954, 0.1105, 0.1130,
+        0.1105, 0.1076, 0.1060, 0.0931, 0.0999, 0.0962, 0.1123, 0.0967, 0.1025,
+        0.1025, 0.0968, 0.0945, 0.0972, 0.1083], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.3195, 0.3146, 0.3086, 0.3152, 0.3002, 0.3166, 0.3182, 0.2980, 0.3092,
+        0.3000, 0.3418, 0.3220, 0.2983, 0.2932, 0.3027, 0.2981, 0.3206, 0.3204,
+        0.3133, 0.3366, 0.3527, 0.3181, 0.3310, 0.3083, 0.3209, 0.3203, 0.3223,
+        0.3087, 0.3103, 0.2912, 0.3237, 0.3180], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0688, 0.0784, 0.0722, 0.0723, 0.0678, 0.0698, 0.0775, 0.0768, 0.0696,
+        0.0787, 0.0724, 0.0722, 0.0562, 0.0678, 0.0701, 0.0752, 0.0718, 0.0668,
+        0.0790, 0.0723, 0.0668, 0.0654, 0.0709, 0.0660, 0.0659, 0.0697, 0.0746,
+        0.0734, 0.0774, 0.0775, 0.0745, 0.0774], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.3280, 0.3096, 0.3537, 0.3180, 0.3019, 0.3322, 0.3223, 0.3182, 0.3052,
+        0.3248, 0.3198, 0.3293, 0.3237, 0.3351, 0.3050, 0.3159, 0.2941, 0.3362,
+        0.3257, 0.3201, 0.3126, 0.3014, 0.3214, 0.3117, 0.3040, 0.3233, 0.3115,
+        0.3308, 0.3300, 0.3008, 0.3199, 0.3247], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0589, 0.0621, 0.0582, 0.0533, 0.0519, 0.0537, 0.0529, 0.0494, 0.0614,
+        0.0578, 0.0513, 0.0574, 0.0591, 0.0502, 0.0547, 0.0588, 0.0546, 0.0572,
+        0.0567, 0.0578, 0.0577, 0.0531, 0.0522, 0.0600, 0.0533, 0.0535, 0.0433,
+        0.0455, 0.0536, 0.0576, 0.0586, 0.0599], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.3524, 0.3335, 0.3264, 0.3411, 0.3354, 0.3397, 0.3131, 0.3467, 0.3286,
+        0.3376, 0.3278, 0.3061, 0.3421, 0.3355, 0.3407, 0.3467, 0.3043, 0.3475,
+        0.3188, 0.3358, 0.3378, 0.3089, 0.3515, 0.3398, 0.3295, 0.3186, 0.3205,
+        0.3184, 0.3511, 0.3278, 0.3146, 0.3473], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0359, 0.0336, 0.0439, 0.0368, 0.0457, 0.0375, 0.0457, 0.0461, 0.0424,
+        0.0395, 0.0414, 0.0397, 0.0395, 0.0430, 0.0411, 0.0360, 0.0455, 0.0376,
+        0.0413, 0.0398, 0.0423, 0.0389, 0.0423, 0.0383, 0.0388, 0.0473, 0.0433,
+        0.0356, 0.0448, 0.0396, 0.0435, 0.0467], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.3135, 0.3492, 0.3302, 0.3308, 0.3150, 0.3308, 0.3158, 0.3116, 0.3266,
+        0.3090, 0.3292, 0.3239, 0.3322, 0.3202, 0.3359, 0.3349, 0.3104, 0.3184,
+        0.3442, 0.3221, 0.3085, 0.3214, 0.3456, 0.3274, 0.3210, 0.3309, 0.3325,
+        0.3482, 0.3327, 0.3300, 0.3238, 0.3338], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.2161, 0.2111, 0.1949, 0.2338, 0.2175, 0.1985, 0.2249, 0.2042, 0.1864,
+        0.2055, 0.1969, 0.2287, 0.2063, 0.1920, 0.2164, 0.2065, 0.2194, 0.2135,
+        0.2071, 0.2202, 0.2236, 0.1915, 0.2207, 0.1928, 0.2084, 0.2047, 0.1880,
+        0.1882, 0.2073, 0.2148, 0.1995, 0.2217], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.2703, 0.2738, 0.2696, 0.2961, 0.2857, 0.2670, 0.2789, 0.2818, 0.2649,
+        0.2592, 0.2932, 0.2606, 0.2868, 0.2870, 0.2765, 0.2957, 0.2890, 0.2783,
+        0.2900, 0.3065, 0.2741, 0.3010, 0.2650, 0.2836, 0.2735, 0.2740, 0.3006,
+        0.2927, 0.2790, 0.2850, 0.2718, 0.2773], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.1466, 0.1416, 0.1492, 0.1359, 0.1425, 0.1479, 0.1481, 0.1496, 0.1347,
+        0.1440, 0.1374, 0.1469, 0.1322, 0.1380, 0.1363, 0.1438, 0.1484, 0.1498,
+        0.1344, 0.1427, 0.1501, 0.1403, 0.1529, 0.1507, 0.1348, 0.1407, 0.1514,
+        0.1415, 0.1424, 0.1541, 0.1538, 0.1440], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.2707, 0.2493, 0.2561, 0.2692, 0.2513, 0.2552, 0.2558, 0.2452, 0.2474,
+        0.2902, 0.2510, 0.2712, 0.2769, 0.2397, 0.2784, 0.2660, 0.2585, 0.2538,
+        0.2737, 0.2346, 0.2721, 0.2600, 0.2589, 0.2749, 0.2743, 0.2837, 0.2474,
+        0.2874, 0.2527, 0.2632, 0.2549, 0.2656], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.1011, 0.0939, 0.1012, 0.1056, 0.1092, 0.0998, 0.0980, 0.1048, 0.1094,
+        0.0969, 0.0976, 0.1000, 0.1033, 0.1007, 0.1011, 0.1053, 0.1128, 0.0987,
+        0.1069, 0.1032, 0.1118, 0.1097, 0.1043, 0.1166, 0.0984, 0.1076, 0.1073,
+        0.1150, 0.1005, 0.1173, 0.0962, 0.0988], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+image emb shape: torch.Size([32, 1024])
+REAL LOGITS:  tensor([0.2567, 0.2509, 0.2599, 0.2418, 0.2358, 0.2572, 0.2529, 0.2838, 0.2598,
+        0.2649, 0.2531, 0.2639, 0.2531, 0.2549, 0.2667, 0.2746, 0.2380, 0.2376,
+        0.2483, 0.2590, 0.2782, 0.2664, 0.2520, 0.2687, 0.2434, 0.2626, 0.2606,
+        0.2545, 0.2533, 0.2562, 0.2406, 0.2554], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+FAKE LOGITS:  tensor([0.0927, 0.0866, 0.0791, 0.0807, 0.0804, 0.0877, 0.0758, 0.0833, 0.0817,
+        0.0857, 0.0898, 0.0756, 0.0861, 0.0868, 0.0769, 0.0882, 0.0798, 0.0857,
+        0.0754, 0.0854, 0.0797, 0.0884, 0.0870, 0.0694, 0.0759, 0.0897, 0.0827,
+        0.0858, 0.0839, 0.0803, 0.0773, 0.0865], device='cuda:0',
+       grad_fn=<ViewBackward0>)
+REAL LABELS:  tensor([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.],
+       device='cuda:0')
+FAKE LABELS:  tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0.], device='cuda:0')
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([26, 1024])
+[1/500][220]
+                         Loss_DIT: 1.36 Loss_GIT: 0.57 Loss_DTI: 1.33 Loss_GTI: 0.68 Time: 339.69s
+                      
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+image emb shape: torch.Size([32, 1024])
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+[1/500][220]
+                         Loss_DIT: 1.45 Loss_GIT: 0.43 Loss_DTI: 1.33 Loss_GTI: 0.68 Time: 316.53s
+                      
+[2/500][220]
+                         Loss_DIT: 1.63 Loss_GIT: 0.31 Loss_DTI: 1.38 Loss_GTI: 0.70 Time: 320.25s
+                      
+[3/500][220]
+                         Loss_DIT: 1.63 Loss_GIT: 0.31 Loss_DTI: 1.38 Loss_GTI: 0.70 Time: 322.78s
+                      
+[4/500][220]
+                         Loss_DIT: 1.63 Loss_GIT: 0.31 Loss_DTI: 1.39 Loss_GTI: 0.70 Time: 319.04s
+                      
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+[1/500][220]
+                         Loss_DIT: 1.02 Loss_GIT: 0.69 Loss_DTI: 1.34 Loss_GTI: 0.68 Time: 325.20s
+                      
+[2/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 1.38 Loss_GTI: 0.70 Time: 325.14s
+                      
+[3/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 1.38 Loss_GTI: 0.70 Time: 336.18s
+                      
+[4/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 1.39 Loss_GTI: 0.70 Time: 336.43s
+                      
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+<generator object Module.parameters at 0x7fa5500f2f10>
+<generator object Module.parameters at 0x7fa548cb89e0>
+<generator object Module.parameters at 0x7fa548cb89e0>
+<generator object Module.parameters at 0x7fa548cb8c80>
+<generator object Module.parameters at 0x7fa548cb8c80>
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+0.0006
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+[1/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 1.40 Loss_GTI: 0.75 Time: 328.79s
+                      
+[2/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 1.39 Loss_GTI: 0.70 Time: 314.85s
+                      
+[3/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 1.39 Loss_GTI: 0.69 Time: 315.93s
+                      
+[4/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 1.38 Loss_GTI: 0.73 Time: 323.35s
+                      
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+[1/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 589502954403359232.00 Loss_GTI: 6449081697.76 Time: 295.14s
+                      
+[2/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 620432860189008640.00 Loss_GTI: 0.00 Time: 292.02s
+                      
+[3/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 620410441396807296.00 Loss_GTI: 0.00 Time: 290.63s
+                      
+[4/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 620413130827237760.00 Loss_GTI: 0.00 Time: 270.16s
+                      
+[5/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 620410412659571584.00 Loss_GTI: 0.00 Time: 272.38s
+                      
+[6/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 620430819845272064.00 Loss_GTI: 0.00 Time: 280.77s
+                      
+[7/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 620429098734741120.00 Loss_GTI: 0.00 Time: 278.06s
+                      
+[8/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 620429908062760320.00 Loss_GTI: 0.00 Time: 276.50s
+                      
+[9/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 620422523217901184.00 Loss_GTI: 0.00 Time: 290.20s
+                      
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+[1/500][220]
+                         Loss_DIT: 1.02 Loss_GIT: 0.69 Loss_DTI: 400558.11 Loss_GTI: 245623.15 Time: 288.60s
+                      
+[2/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 163.91 Loss_GTI: 530.46 Time: 280.46s
+                      
+[3/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 79.39 Loss_GTI: 39.31 Time: 279.17s
+                      
+[4/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 22.62 Loss_GTI: 11.45 Time: 279.26s
+                      
+[5/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 16.29 Loss_GTI: 27.07 Time: 276.61s
+                      
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+[1/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 1.37 Loss_GTI: 0.70 Time: 275.87s
+                      
+[2/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 1.39 Loss_GTI: 0.70 Time: 268.88s
+                      
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+[1/500][220]
+                         Loss_DIT: 1.33 Loss_GIT: 0.69 Loss_DTI: 1.48 Loss_GTI: 0.94 Time: 295.57s
+                      
+[2/500][220]
+                         Loss_DIT: 1.33 Loss_GIT: 0.69 Loss_DTI: 1.39 Loss_GTI: 0.70 Time: 296.35s
+                      
+[3/500][220]
+                         Loss_DIT: 1.33 Loss_GIT: 0.69 Loss_DTI: 1.39 Loss_GTI: 0.69 Time: 294.08s
+                      
+[4/500][220]
+                         Loss_DIT: 1.33 Loss_GIT: 0.69 Loss_DTI: 1.39 Loss_GTI: 0.69 Time: 279.03s
+                      
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+[1/500][220]
+                         Loss_DIT: 2.00 Loss_GIT: 0.31 Loss_DTI: 1.82 Loss_GTI: 0.99 Time: 282.94s
+                      
+[2/500][220]
+                         Loss_DIT: 2.01 Loss_GIT: 0.31 Loss_DTI: 1.39 Loss_GTI: 0.70 Time: 297.87s
+                      
+[3/500][220]
+                         Loss_DIT: 2.01 Loss_GIT: 0.31 Loss_DTI: 1.39 Loss_GTI: 0.69 Time: 297.27s
+                      
+[4/500][220]
+                         Loss_DIT: 2.01 Loss_GIT: 0.31 Loss_DTI: 1.39 Loss_GTI: 0.69 Time: 305.49s
+                      
+[5/500][220]
+                         Loss_DIT: 2.01 Loss_GIT: 0.31 Loss_DTI: 1.49 Loss_GTI: 0.90 Time: 300.45s
+                      
+[6/500][220]
+                         Loss_DIT: 2.01 Loss_GIT: 0.31 Loss_DTI: 1.39 Loss_GTI: 0.70 Time: 292.15s
+                      
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+[1/500][220]
+                         Loss_DIT: 2.00 Loss_GIT: 0.31 Loss_DTI: 189.34 Loss_GTI: 2467.77 Time: 287.44s
+                      
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+[1/500][220]
+                         Loss_DIT: 1.39 Loss_GIT: 0.69 Loss_DTI: 125.02 Loss_GTI: 413.51 Time: 284.89s
+                      
+[2/500][220]
+                         Loss_DIT: 1.39 Loss_GIT: 0.69 Loss_DTI: 1.68 Loss_GTI: 0.91 Time: 293.57s
+                      
+[3/500][220]
+                         Loss_DIT: 1.39 Loss_GIT: 0.69 Loss_DTI: 1.39 Loss_GTI: 0.69 Time: 292.27s
+                      
+[4/500][220]
+                         Loss_DIT: 1.39 Loss_GIT: 0.69 Loss_DTI: 1.39 Loss_GTI: 0.69 Time: 279.54s
+                      
+[5/500][220]
+                         Loss_DIT: 1.39 Loss_GIT: 0.69 Loss_DTI: 1.78 Loss_GTI: 2.03 Time: 273.23s
+                      
+[6/500][220]
+                         Loss_DIT: 1.39 Loss_GIT: 0.69 Loss_DTI: 1.40 Loss_GTI: 1.03 Time: 277.17s
+                      
+[7/500][220]
+                         Loss_DIT: 1.39 Loss_GIT: 0.69 Loss_DTI: 1.39 Loss_GTI: 0.69 Time: 268.57s
+                      
+[8/500][220]
+                         Loss_DIT: 1.39 Loss_GIT: 0.69 Loss_DTI: 1.39 Loss_GTI: 0.69 Time: 281.89s
+                      
+[9/500][220]
+                         Loss_DIT: 1.39 Loss_GIT: 0.69 Loss_DTI: 1.65 Loss_GTI: 1.00 Time: 277.98s
+                      
+Save G/Ds models...count:2000
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+[1/500][220]
+                         Loss_DIT: 1.01 Loss_GIT: 0.69 Loss_DTI: 219.23 Loss_GTI: 113.73 Time: 298.43s
+                      
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+['the center of the flower is orange with light pink petals that are drooping ', 'this flower has petals that are orange blue and very thin ', 'this flower has petals that are yellow and very thin ', 'this flower has one large bell shaped petal that swirls around the stamen ', 'this flower is pink and yellow in color with petals that are drooping down ', 'this flower has several large wide red petals with rounded slightly ruffled edges ', 'the petals of the tropical flower are yellow in color and extend from a green stem ', 'this flower is yellow in color with petals that are very skinny ', 'the petals of this flower are purple with a long stigma ', 'this flower is white and purple in color with petals that are spotted ', 'the flower petals are light pink in color the stamens are long in of ', 'this pretty flower has large yellow and blue petal with a long stem ', 'the flower is red in color with a long pedicel with leaves on it ', 'the petals of this flower are lavender in color and grow down from the center ', 'this flower has orange and purple petals and a pinkish pedicel ', 'this flower has petals that are orange and very iny ', 'this flower has petals that are white with yellow stamen ', 'this flower has a white wrapping floral bract as its main feature ', 'this flower has a long white petal with no visible stigma ', 'this flower has petals that are red with dark dots ', 'the flower has orange petals that surround the orange anther and filament ', 'the petals of the flower are smooth and have a short stigma in the center ', 'this flower has large purple petals and a yellow stigma in the center ', 'the petals on this flower are yellow with brown dots ', 'flower with yellow dark and light pink petals on a green stem ', 'this flower features a striking blue ovary surrounded by pointed orange petals ', 'this is a flower head with a purple fluffy top and a spiny ball just under that ', 'this flower has bright yellow petals folded around each other ', 'this flower has curled petals that are a bright pink color ', 'this flower is orange and black in color with petals that are spotted ', 'this white flower only has few petals but a couple have a fuchsia design pattern ', 'a flower with folded back spotted yellow and red petals green filaments a nd orange anther ']
+['one company of s of a a of and and to ', 'this am has finally and and is well ', 'this am has felt that as as as a ', 'this exhibition has just a - and and is a a in ', 'this dream is ms a - - - and and and is it ', 'this concert has up in - and and and and and and and and ', 'a layup of one wine of a a and and a a of of ', 'this dream is ms and and is are to well ', 'one isn of this man is a a of of children ', 'this song where a - - - and and and is it ', 'a hot paintings are a in - it are a of of ', 'this whole bedroom was a in and and and a a a ', 'one glass is born a a - a a and it ', 'another stretch of s m is a a of are a in of ', 'a article has died and and and and a a glass ', 'this am has felt is as to a ', 'this am has definitely is to a a - music ', 'this song has a new - and and a a a screen ', 'this article was a a - - or and a ', 'this concert has definitely is is a a - water ', 'a concert also spotted as a and and and ', 'another loft of s car are a is to a a of of ', 'this concert has built - and and a a in in in city ', 'another loud on this is a a and and ', 'tagged - glass a and and a a a a ', 'this article features a a in in and and and and ', 'this is a fantastic a - - - - and and and it a it ', 'this song has recorded a a a more than feet ', 'this m had recycled wine and to a a and ', 'this exhibition located in - - and and and and are well ', 'this first dream i was a in is a a a a ', 'a walking with hander off a a and and and and ']
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+text_i
+['this flower has petals that are white with green pedicel ', 'this flower has petals that are yellow with dark spots ', 'this flower is yellow in color with petals that are ruffled and wavy ', 'this flower is white and purple in color with petals that are spotted ', 'the flower is orange with petals that are soft smooth curly and arranged around stamens ', 'the petals of this flower are white with a short stigma ', 'the petals on this flower are really thin and yellow and the pistil is round and yellow ', 'the funnel shaped orange flower has petals that are soft smooth and separately arranged around sepals ', 'there is a large curved pale pink petal below two slightly smaller darker pink petals which have a magenta thread pattern fanning out from a yellow stigma ', 'leaves are green in color petals are light pink in color ', 'a dull pink petaled flower with bright red tipped pistils ', 'this flower has long and orange petals and yellow anthers in the middle of it ', 'bright yellow petals with a faint shine and slight creases surround a bundle of squat stamens in several layers ', 'this flower is pink and green in color with petals that are very skinny ', 'this flower is orange and blue in color with petals that are pointy and skinny ', 'a flower with folded inward green sepal and two large orange petals ', 'this flower has a single white petal and white stamen ', 'this flower has orange and purple petals and a pinkish pedicel ', 'the flower has petals that are yellow with a green pedicel ', 'this flower has large white petals and no visible outer stigma or stamen ', 'the flower has bright pink petals with a green pedicel ', 'this bright blue flower has pointed petals in the shape of a star ', 'this flower has droopy pink petals as its main feature ', 'this is a flower that has yellow petals with brown spots on them ', 'this flower is white in color with only one large petal ', 'this flower has a lot of small white petals and no visible stigma ', 'flower is enclosed in a bud like leaf with yellow petals on the outside and long purple style ', 'this flower has petals that are purple and very thin ', 'this flower is white and purple in color with petals that are multi colored ', 'this flower has petals that are orange and very thin ', 'this flower is pink and yellow in color with petals that are skinny and oval ', 'this flower has petals that are purple and closed together ']
+text_g
+['this flower has petals that are white with green pedicel ', 'this flower has petals that are yellow with dark spots ', 'this flower is yellow in color with petals that are ruffled and wavy ', 'this flower is white and purple in color with petals that are spotted ', 'the flower is orange with petals that are soft smooth curly and arranged around stamens ', 'the petals of this flower are white with a short stigma ', 'the petals on this flower are really thin and yellow and the pistil is round and yellow ', 'the funnel shaped orange flower has petals that are soft smooth and separately arranged around sepals ', 'there is a large curved pale pink petal below two slightly smaller darker pink petals which have a magenta thread pattern fanning out from a yellow stigma ', 'leaves are green in color petals are light pink in color ', 'a dull pink petaled flower with bright red tipped pistils ', 'this flower has long and orange petals and yellow anthers in the middle of it ', 'bright yellow petals with a faint shine and slight creases surround a bundle of squat stamens in several layers ', 'this flower is pink and green in color with petals that are very skinny ', 'this flower is orange and blue in color with petals that are pointy and skinny ', 'a flower with folded inward green sepal and two large orange petals ', 'this flower has a single white petal and white stamen ', 'this flower has orange and purple petals and a pinkish pedicel ', 'the flower has petals that are yellow with a green pedicel ', 'this flower has large white petals and no visible outer stigma or stamen ', 'the flower has bright pink petals with a green pedicel ', 'this bright blue flower has pointed petals in the shape of a star ', 'this flower has droopy pink petals as its main feature ', 'this is a flower that has yellow petals with brown spots on them ', 'this flower is white in color with only one large petal ', 'this flower has a lot of small white petals and no visible stigma ', 'flower is enclosed in a bud like leaf with yellow petals on the outside and long purple style ', 'this flower has petals that are purple and very thin ', 'this flower is white and purple in color with petals that are multi colored ', 'this flower has petals that are orange and very thin ', 'this flower is pink and yellow in color with petals that are skinny and oval ', 'this flower has petals that are purple and closed together ']
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+text_i
+['the flower stamen are needle shaped and purple in color with larger anthers ', 'the alternating leaves are broad and green and the smaller flower petals are orange ', 'this flower is yellow in color with petals that are skinny and long ', 'needle thin yellow petals with a hint of orange at the ends and orange stamen ', 'this flower has petals that are pink with yellow stamen ', 'this flower has several smooth funded petals in bright jewel shades of blue red and purple ', 'this fierce flower has long pointy petals that are orange in color and a sharp black stigma ', 'the anthers are yellow in color and larger with smaller petals white in color ', 'the petals are joint on the base and individuals petals are on the top ', 'a flower with many folded over bright yellow petals ', 'this flower features a prominent ovary covered with dozens of small stamens featuring thin white petals ', 'this flower has floppy soft white petals around the green pistil ', 'this flower has mostly white petals although the top two have a yellow strip and brown streaks around the green stamen ', 'this flower has petals that are purple with yellow stigma ', 'these flowers have petals that start off white in color and end in a dark purple towards the tips ', 'the large circular of petals have a yellow center white filaments and dark yellow anthers ', 'a unique flower that is yellow orange and blue in color ', 'a yellow flower with visible yellow anther filaments and pistils ', 'a flower with multicolored hanging red yellow pink and white petals green sepals and green pedicel ', 'this flower has petals that are red with patches of yellow ', 'this flower is pink in color with petals that are skinny ', 'the flower has petals that are yellow with red anthers ', 'this flower is yellow in color with petals that are very skinny ', 'this flower is pink and yellow in color with petals that are spotted ', 'this bright orange flower has long oval shaped petals and the color transitions to yellow towards the center ', 'the flower has a smooth white petal with a yellow pollen tube ', 'this flower is yellow in color with petals that are large and wavy ', 'this flower is pink and red in color with petals that are drooping downward ', 'this flower has petals that are purple with yellow stamen ', 'the wavy pink petals on this flower are attached by a thick green pedicel ', 'a pink flower with large pink petals supported by large green sepal ', 'the flower shown has purple and white petals with purple anther ']
+text_g
+['the flower stamen are needle shaped and purple in color with larger anthers ', 'the alternating leaves are broad and green and the smaller flower petals are orange ', 'this flower is yellow in color with petals that are skinny and long ', 'needle thin yellow petals with a hint of orange at the ends and orange stamen ', 'this flower has petals that are pink with yellow stamen ', 'this flower has several smooth funded petals in bright jewel shades of blue red and purple ', 'this fierce flower has long pointy petals that are orange in color and a sharp black stigma ', 'the anthers are yellow in color and larger with smaller petals white in color ', 'the petals are joint on the base and individuals petals are on the top ', 'a flower with many folded over bright yellow petals ', 'this flower features a prominent ovary covered with dozens of small stamens featuring thin white petals ', 'this flower has floppy soft white petals around the green pistil ', 'this flower has mostly white petals although the top two have a yellow strip and brown streaks around the green stamen ', 'this flower has petals that are purple with yellow stigma ', 'these flowers have petals that start off white in color and end in a dark purple towards the tips ', 'the large circular of petals have a yellow center white filaments and dark yellow anthers ', 'a unique flower that is yellow orange and blue in color ', 'a yellow flower with visible yellow anther filaments and pistils ', 'a flower with multicolored hanging red yellow pink and white petals green sepals and green pedicel ', 'this flower has petals that are red with patches of yellow ', 'this flower is pink in color with petals that are skinny ', 'the flower has petals that are yellow with red anthers ', 'this flower is yellow in color with petals that are very skinny ', 'this flower is pink and yellow in color with petals that are spotted ', 'this bright orange flower has long oval shaped petals and the color transitions to yellow towards the center ', 'the flower has a smooth white petal with a yellow pollen tube ', 'this flower is yellow in color with petals that are large and wavy ', 'this flower is pink and red in color with petals that are drooping downward ', 'this flower has petals that are purple with yellow stamen ', 'the wavy pink petals on this flower are attached by a thick green pedicel ', 'a pink flower with large pink petals supported by large green sepal ', 'the flower shown has purple and white petals with purple anther ']
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+text_i
+['the flower has skinny dark pink petals and a large round pistil ', 'the leaves are alternately arranged with white pink petals that are overlapping ', 'this pink flower has many odd shaped petals ', 'the flower has several thin and oblong pink petals with a large center of dark orange pistils ', 'a lazy looking flower with pink pedals and a pineapple - like center ', 'this flower is pink and purple in color with petals that are multi colored ', 'this unique tropical flower has thick waxy orange pointy petals ', 'this flower has petals that are purple with dark lines ', 'this flower has petals that are pink with yellow patches ', 'this flower is yellow and green in color and has petals that have veins ', 'this flower has a single large white petal that is folded around a large yellow finger - like stamen ', 'a flower with small thin yellow petals and central pentacle cluster of yellow stamen ', 'a purple flower with heart shaped petals and tiny white anther ', 'the pedals are very narrow and light green in color while the stamen is yellow and rather large in size compared to the petals ', 'this flower is yellow in color with petals that are very skinny ', 'the flower shown has three rows of orange petals and a yellow center ', 'this flower has petals that are orange with a yellow center ', 'this flower has light red petals with brown spots on it and light red stamen with brown anthers on it ', 'this flower is white in color with petals that are wavy and uneven ', 'the pale yellow flower has very distinctive wide broad petals ', 'a flower with many folded over bright yellow petals ', 'the petals are white with a yellow pistol in the middle ', 'this flower has a lot of long and skinny yellow petals and it has a lot of yellow anthers ', 'this flower has several small oval orange petals and an orange ovule ', 'this small flower has an out row of tiny long petals and a yellow middle of stamen ', 'this flower is pink and red in color with petals that are drooping down ', 'this flower is yellow in color with petals that are very skinny and layered ', 'the flower has many thin yellow petals and many yellow anthers in the center ', 'the flower has pink thin pointy petals and white pistils ', 'this flower is yellow and white in color with only one large petal ', 'the pedicel has many flowers growing from it and the petals being pink ', 'flower has petals that are white and with yellow anthers ']
+text_g
+['is a a of of of ', 'is a of of of of of of ', 'is a a of of of of of ', 'is a a of of of ', 'is a a of of of ', 'is a a of of of of of ', 'is a a of of of of of ', 'is a a of of of of ', 'is a a of of of of of ', 'is a a of of of of ', 'is a a of of of of ', 'is a of of of of of ', 'a a of of of of ', 'is a of of of ', 'is a a of ', 'is a a a of of of ', 'is a a of of of ', 'is a a of of of of of ', 'a a of of of of ', 'is a a of of of of of ', 'is a a of of of ', 'is a a of of of of of ', '- a of of of of of of ', 'is a a a of of ', 'is a of of of ', 'is a of of of of of of ', 'is a of of of ', 'is a a of of of ', 'is a of of of of of of ', 'is a a of of of of of ', 'is a a of of of of of ', 'is a a of of of of ']
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+text_i
+['this flower is white and pink in color with petals that are pointed at the tips ', 'the flower shown has white petals with yellow and purple coloring ', 'this flower has petals that are pink with purple and yellow lines ', 'this flower is white in color with petals that are wavy and large ', 'this flower is white in color with only one large petal ', 'this flower shown has yellow petals surrounding the yellow anther ', 'this flower has petals that are purple and very thin ', 'this flower has petals of different shapes and patterns accompanied by a big pistil ', 'the petals of this flower are pink and white with a long stigma ', 'this flower has petals that are yellow with a yellow stigma ', 'the funnel shaped orange flower has petals that are soft smooth and separately arranged around sepals ', 'this flower has red petals with dark red dots and long white stamens on them ', 'this pretty flower has large yellow and blue petal with a long stem ', 'ruffled white and pink smooth petals with a green pedicel ', 'this flower is orange in color with petals that are layered ', 'the bottom of the flower is a collection of green thorns with bright yellow tips while the top is some thin of hairlike structures in bright purple ', 'a lavender flower with deep purple on the edge of petals and deep green colored stem ', 'petals are oval in of they are light pink in color ', 'needle thin yellow petals with a hint of orange at the ends and orange stamen ', 'the flower is on a thick stem and has a visible ovary that is green in color ', 'this flower is pink and yellow in color with petals that are spotted on the inside ', 'petals are light brown in color stamens are white in color ', 'this flower has petals that are pink with red stamen ', 'the pretty flower has petals the look short like spikes ', 'the petals of this flower are lavender in color and grow down from the center ', 'this is a flower with orange petals and a brown pistil ', 'this flower has long and pointy yellow petals with no visible outer stigma ', 'this flower is blue in color with petals that have veins ', 'this flower has big yellow petals and yellow stamen along with a green pedicel ', 'this flower has a purple sepal and a pointed stigma that are orange ', 'flower is star shaped petals are larger and broader and are yellow of ', 'the multiple blooms of this bloom are yellow and are upon a multi - leaf pedicel ']
+text_g
+['upi of is a a of of of ', 'u.s of a a of of of ', 'mr of of a of of of of ', 'mr of of a of of of ', 'u.s of a a of of of ', 'upi of of a a of of of ', 'upi of is a of of of of ', 'u.s of a a of of of ', 'mr of of a of of of ', 'mr of of a of of of of ', 'mr of of a of of of of ', 'mr of of a of of of ', 'u.s of a a of of of ', 'mr of of a of of of ', 'mr of of a of of of ', 'upi of is a a of of of ', 'u.s of of a a of of of ', 'u.s of of a a of of of ', 'ms of of a of of of ', 'u.s of of a a of of of ', 'mr of of a of of of ', 'u.s of of a a of of of ', 'ms of of a of of of ', 'upi of is a of of of of ', 'u.s of of a a of of of ', 'mr of of a of of of ', 'mr of of a of of of of ', 'u.s of a a of of of ', 'mr of of a of of of of ', 'u.s of of a a of of of ', 'mr of of a a of of of ', 'mr of of a of of of of ']
+texts_o
+['this dream whose a - - - is a a and ', 'a baby appeared also a a - and and jeans ', 'this concert has amazed is are a a - and and ', 'this exhibition is when and and and and and are to to ', 'this dream is when in in and and a a a screen ', 'this baby saw was found in in in in glass ', 'this am has felt that as as as a ', 'this couple was aren of a of and of a a of of ', 'another photograph of this man a a of and and with of ', 'this concert was finally was were a a with or ', 'their loft bedroom glass car are to to to a a a and and a water ', 'this girl has hit a - - - and and and and and and and ', 'this whole bedroom was a in and and and a a a ', 'click music and hander and a a - ', 'this concert is ms and and and and are well ', 'one goal of s game is a a - - of of of of of of of of of of of of of ', 'a rbi carpet with a with a a of of and and and - - ', 'll of lots of has been a a of of ', 'det beneath sweet layers at a of of - of of of ', 'one exhibition is not a a and is a a a and and a ', 'this article is discovered a - - - was a a a ', 'dishes are my baby is a a your ', 'this am has definitely is to a a - and ', 'a whole ipod was just as as and your your ', 'another stretch of s m is a a of are a in of ', 'this is a sweet - - - and and and ', 'this concert has opened a a and and or or and and ', 'this dream is published and and and and are too ', 'this song was built a - and and and a a - - ', 'this concert has a car and and and are to well ', 'oh whose wine is a a and are are of of ', 'with heavy layers of of and a of is to a a - of ']
+score
+0
+0
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+text_i
+['this flower has large pink petals and no visible outer stamen ', 'the flower is orange with petals that are soft smooth curly and arranged around stamens ', 'this unique flower has several orange spikey petals with a bright blue stigma ', 'what i like about this flower is its mixture of purple petals ', 'this flower has petals that are purple and very thin ', 'the petals on this flower are yellow with no visible stamen ', 'a yellow flower with yellow petal with a yellow ovary ', 'this flower is yellow in color with petals that are ruffled on the ends ', 'this flower has very long narrow spiky petals that come to a sharp point and are colored yellow and seem to turn purple when they wither ', 'the flower has orange blue green and white pointed petals ', 'the circular heavily - veined petals are tightly wrapped around the yellow stamens in several rows and are yellow on the inner layers and green on the outer - most layer ', 'this flower has numerous pink petals with slightly ruffled edges ', 'this flower has petals that are purple and very thin ', 'this flower has dark yellow skinny long wide spread petals with a orange pistil ', 'this flower is pink and red in color with petals that are oval shaped ', 'this is a small flower with many purple and white petals ', 'the pretty flower has petals the look short like spikes ', 'this flower has petals that are yellow with dark lines ', 'the petals of this flower are yellow with a long stigma ', 'petals are spiky and needle shaped they are purple in color ', 'this flower is yellow in color and has petals that are curved inward ', 'this flower has long oval shaped lavender petals and a large spiky center ', 'this flower has thick white petals as its main feature ', 'this flower has petals that are purple with dark lines ', 'an odd shaped flower with long narrow purple petals and a dark colored stigma ', 'the flower has a smooth white petal with a yellow pollen tube ', 'the pink petals are yellow towards the center with a striped pattern seen on some petals ', 'the flower has long yellow petals that are thin and a yellow stamen ', 'a stark white petaled flower with a peeking yellow pistil ', 'this flower is purple in color with five petals and greed of ', 'this flower has petals that are purple and very thin ', 'the petals of this flower are pink with a short stigma ']
+text_g
+['he of of of of of ', 'he a of of of of of ', 'he a of of of of of ', 'he of of of of of ', 'of of of of of ', 'he a of of of of of ', 'of of of of of ', 'he a of of of of ', 'he a of of of of of ', 'he a of of of of of ', 'he a of of of of ', 'he of of of of of ', 'of of of of of ', 'of of of of of ', 'he of of of of of ', 'of of of of of ', 'of of of of of ', 'he a of of of of of ', 'he a of of of of of ', 'of of of of of ', 'he a of of of of ', 'he of of of of of ', 'he of of of of of ', 'he of of of of of ', 'of of of of of ', 'he of of of of of ', 'he a of of of of of ', 'he of of of of of ', 'he of of of of of ', 'he of of of of of ', 'he of of of of of ', 'he of of of of of ']
+texts_o
+['this article was built - and and and a in water ', 'a yard is built in is a a a and and and and and and ', 'a ms carpet was a a - and a a - - ', 'what does like one story as a a of of a of ', 'this am has felt that as as as a ', 'another recycled on this is a a and and ', 'a dark bedroom with a and a a - room ', 'this dream is ms in - is a a a ', 'this am was just a in to a a and and to it ', 'a concert also replaced and and ', 'a barrel aged - - and to a a a - - and and and ', 'this song has built - and and a a cream ', 'this am has felt that as as as a ', 'this article was built a - - a a a a a - cream ', 'this dream is ms in - - - and and and is a ', 'this is a small - - - - - and ', 'a whole ipod was just as as and your your ', 'this sweet has definitely is as a a small ', 'one isn of this man is a a a of of ', 'tagged are rbi and my are to a your clothes ', 'this dream is ms in is are to to ', 'this entry has reported a - - - and a a - - and ', 'this song was bought and and a a - music ', 'this sweet has definitely is as a a small ', 'an sweet sweet vegetables in a - - - and and a cream ', 'a concert was a a - a a a a a cream ', 'a older sinks are a a a a and a and a a a ', 'one tree was built in are a a a and ', 'a article includes spray contributed with a a cream ', 'this article is ms in a - - and of of ', 'this am has felt that as as as a ', 'one isn of this man is a a a of of ']
+score
+0
+0
+0
+0
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerTrue0.pt'
+text_i
+['a small flower with tiny white petals spread out flat around a white stigma ', 'this flower has lavender petals with maroon stripes and brown anther filaments ', 'this flower has petals that are red with green stigma ', 'this purple flower has tiny pointed petals all over and no visible pollen tube or stamen ', 'a flower with broad white and pink ribbed petals and yellow stamen ', 'the flower is made of small petals that are light purple in color ', 'this is a large orange flower with blue spots on the petals and orange stamen ', 'this flower has white anther and pink petals as its main features ', 'light purple petals with orange and black middle green leaves ', 'this flower is white and light yellow in color and has petals that are multi colored ', 'this is a flower head with a purple fluffy top and a spiny ball just under that ', 'the petals on this flower are orange with a long stigma ', 'a bulb beige stigma accompanied by triangular white shaped smooth petals ', 'this flower has large wrinkled petals that are are mostly light purple but turn white in the center and yellow at the base ', 'the petals of this flower are ribbon - like and polka dotted ( cream coloring with black dots ) ', 'this flower has petals that are orange with yellow center ', 'this is a very odd shaped flower ', 'the flower has petals that are pink and the stamen and pistil are green ', 'this flower is orange and yellow in color and has petals that are long and skinny ', 'this flower is white and yellow in color with petals that are rounded ', 'the petals of this flower are purple and white with a long stigma ', 'the petals of this flower are purple with a long stigma ', 'the flower is on a thick stem and has a visible ovary that is green in color ', 'this flower has a bright yellow stamen and a pink and orange petal ', 'this white flower only has few petals but a couple have a fuchsia design pattern ', 'the flower shown has yellow petals surrounding yellow stamen ', 'narrow yellow petals radiate outward from a central disk of yellow florets ', 'this flower is purple in color with petals that have veins ', 'the flower shown has yellow pistil with large pink petals ', 'this five - of bell - shaped lavender flower has yellow anthers emerging from its throat ', 'the delicate purple flowers have thin stamen with purple tipped anther ', 'this flower has long and pointy pink petals that are pointed downwards and a lot of red anthers on top ']
+text_g
+['upi s of of a of ', 'scheme of s was a of ', 'upi of s of of of ', 'version of s of of of ', 'version of of of of of ', 'upi of s of of of ', 'version of of of of ', 'scheme of s of of of ', 'upi of s of of of ', 'upi of s of of a of ', 'scheme of s of of of of ', 'upi of s of of a ', 'version of of of of ', 'version of of of of of ', 'upi of s of of of ', 'upi of s of of a of ', 'upi of s of of of ', 'scheme of s was a of ', '', 'upi of s of of of ', 'upi of s of of of ', 'version of of of of of ', 'scheme of s of of a of ', '', 'version of of of of ', '', 'scheme of s of of of ', 'version of s of of of ', 'version of of of of of ', 'upi s of of a of ', 'upi of s of of a a of ', 'upi of s of of of ']
+texts_o
+['a small feet and a - and and a a a a a ', 'this concert was cordoned and and and and and and ', 'this am has finally is to a a - ', 'this ms carpet was built and and and and and and and and and ', 'a usual for plastic and and and and and and ', 'one collection is just of a of are a a of of ', 'this is a 3 - - - and and and and ', 'this song has born and and and a a - screen ', 'your baby strewn and and and and ', 'this exhibition whose a - - - is are a well ', 'this is a fantastic a - - - - and and and a a ', 'another loud on this man is a a with for life ', 'a ms mortem dress a a a a - - ', 'this entry has built a have been to a a a in in park ', 'another stretch of s game is a a - - and and and and and and of ', 'this concert has definitely is is a in - ', 'this is a very a a a a music ', 'one concert has finally is a a and and and and to ', 'this dream is ms in - are to and and and ', 'this song whose a - - - and and and is too ', 'another photograph of this man a a of and and with of ', 'one isn of this man is a a of of children ', 'one exhibition is not a a and is a a a and and a ', 'this article was a a - and and and a - - cream ', 'this first dream i was a in is a a a a ', 'a tree saw was died in in and ', 'posted hot layers layers with a a of of s ', 'this article is ms in and and and is are well ', 'a tree saw then died a a a a water ', 'about 20 - of of - - of of of a a a a a ', 'a sweet layers dress was a a - - cream ', 'this entry has built in - and and are to a a a of of of of of of ']
+score
+0
+0
+0
+0
+###############output folder###############################
+/home/tuomas_pyorre/Unlabeled_Captioning/ImageTextAutoencoder/output/flowers_2020_06_26_21_30_38
+Initializing Datasets and Dataloaders...
+Loading vocabulary, embedding matrix from trained text model.....
+loading pretrained embeddings.......................
+################### loading successful ####################
+DataParallel(
+  (module): D_NET_TEXT1(
+    (encodings): Sequential(
+      (0): Linear(in_features=100, out_features=400, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=400, out_features=200, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Linear(in_features=200, out_features=200, bias=True)
+      (5): LeakyReLU(negative_slope=0.2, inplace=True)
+      (6): Linear(in_features=200, out_features=200, bias=True)
+      (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=200, out_features=1, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+DataParallel(
+  (module): D_NET_IMAGE(
+    (encodings): Sequential(
+      (0): Linear(in_features=1024, out_features=512, bias=True)
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Linear(in_features=512, out_features=256, bias=True)
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+    (logits): Sequential(
+      (0): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
+=> loading Image encoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/encG_160000.pth'
+=> loading Image decoder from '../output/flowers_3stages_2023_12_03_23_26_46/Model/netG_160000.pth'
+=> loading text autoencoder from 'stored_model_dir/AutoEncoderDglove100_flowerFalse11.pt'
+text_i
+['this flower has a bright yellow stamen and a pink and orange petal ', 'this flower has long peach colored petals with brown spots and multiple long stamens ', 'this flower has four very broad light pink petals with a yellow green center ', 'this flower has petals that are pink with yellow lines ', 'this large purple flower has thin droopy petals and a thick rounded center ', 'a flower with long tall orange petals green sepals marred with red and green pedicel ', "this flower 's purple colour is lovely and the leaves are pointy petals by the many ", 'the funnel shaped orange flower has petals that are soft smooth and separately arranged around sepals ', 'this flower is white and purple in color with petals that are multi colored ', 'flower has a single white petal with yellow stigma and green pedicel of ', 'this flower has thin yellow petals and a yellow stigma ', 'this flower is solid yellow with many tiny cylindrical petals and yellow stamen ', 'the petals on this flower and great in length with warm tones ', 'the petals of this flower are white with a long stigma ', 'the flower has petals that are pale pink or white with white stamen ', 'the orange flower has prominent stamens with large brown anthers and curled petals with brown spots ', 'the flower has yellow petals which appear to be drooping with a green pedicel ', 'this flower is yellow in color with petals that are ruffled on the ends ', 'the flower is red in color with a long pedicel with leaves on it ', 'this interesting flower has few petals and they are purple and striped ', 'the flower has small yellow petals that are dense and thin ', 'this flower is trumpet shaped with a light pink petal and green sepal ', 'this flower has 3 top white petals and 3 lower petals that curve inwards protecting the stamen and pistil ', 'this flower is pink and green in color with petals that are very skinny ', 'a flower with folded open and back red petals with black spots and think red anther ', 'this flower is yellow in color with petals that are curled and wilted ', 'this flower has petals that are purple and very thin ', 'the petals of this flower are purple with a long stigma ', 'this is a flower with orange petals and a brown pistil ', 'this flower has petals that are orange and very thin ', 'this flower has petals that are yellow and are stringy ', 'this interesting orange - red flower houses strange draping stamen ']
+text_g
+['garbey radionuclides like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like ', 'garbey radionuclides like thunderstruck 2012 zorra allaudin ', 'manger manucharyan oskars petals propriété ', 'garbey radionuclides like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like ', 'garbey radionuclides like thunderstruck 2012 zorra allaudin ', 'garbey radionuclides like thunderstruck 2012 zorra allaudin ', 'garbey radionuclides like thunderstruck 2012 zorra allaudin ', 'this adea made feeling megajoules flower burnbrae mathijsen a borkenau clarkesville ', 'this this adea gaffa kissandra ', 'this adea chamestan like prakasa like semi-definite frohlich ', 'garbey radionuclides like thunderstruck 2012 zorra allaudin ', 'garbey radionuclides like thunderstruck 2012 zorra allaudin ', 'this this adea gaffa kissandra ', 'this adea chamestan like prakasa like semi-definite frohlich ', 'this adea chamestan like prakasa like semi-definite frohlich ', 'this adea chamestan like prakasa like semi-definite frohlich ', 'garbey radionuclides like thunderstruck 2012 zorra allaudin ', 'this adea chamestan like prakasa like semi-definite frohlich like e.timor angut-e noortwijk ', 'this adea chamestan like prakasa like semi-definite frohlich ', 'garbey radionuclides like thunderstruck 2012 zorra allaudin ', 'garbey radionuclides like thunderstruck 2012 zorra allaudin ', 'this adea chamestan like prakasa like semi-definite frohlich ', 'this this adea gaffa kissandra ', 'garbey radionuclides like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like ', 'garbey radionuclides like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like ', 'garbey radionuclides like thunderstruck 2012 zorra allaudin ', 'garbey radionuclides like thunderstruck 2012 zorra allaudin ', 'manger manucharyan oskars petals propriété ', 'garbey radionuclides like thunderstruck 2012 zorra allaudin ', 'garbey radionuclides like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like burnbrae like ', 'garbey radionuclides like thunderstruck 2012 zorra allaudin ', 'garbey radionuclides like thunderstruck 2012 zorra allaudin ']
+texts_o
+['this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ', 'this this this this teichert flower peaden petals courau propriété ']
+score
+0
+0
+0
+0

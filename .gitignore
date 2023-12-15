@@ -1,0 +1,8 @@
+*.pt
+*.pth
+*.obj
+news.*
+*.jpg
+*.txt
+*.png
+glove.*
