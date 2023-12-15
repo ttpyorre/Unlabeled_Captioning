@@ -3,9 +3,9 @@ from __future__ import division
 import os
 import errno
 import torch
-import clip
 import torch.nn as nn
 import torch.optim as optim
+import clip
 from torch.utils.data import DataLoader
 from torch.autograd import Variable
 import torchvision
@@ -28,17 +28,8 @@ from pathlib import Path
 from tempfile import mkdtemp
 import pickle
 from copy import deepcopy
-from torch.nn.parallel import DataParallel
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-import nltk
-nltk.download('punkt')
-from nltk.translate.bleu_score import sentence_bleu, corpus_bleu
-
 print("PyTorch Version: ",torch.__version__)
 print("Torchvision Version: ",torchvision.__version__)
-os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:512"
-
 
 if torch.cuda.is_available():   #mine
     torch.cuda.init()           #mine
@@ -88,19 +79,16 @@ def adjust_padding(cap, len1):
 ##########################################################################
 ########################################################################
 
-# encoder_path='/home/phamd/SelfSupervisedImageText/saved_models/flowers/encG_160000.pth' #image encoder
-# dec_path='/home/phamd/SelfSupervisedImageText/saved_models/flowers/netG_160000.pth' #image decoder
-# text_autoencoder_path = '/home/phamd/SelfSupervisedImageText/saved_models/flowers/AutoEncoderDglove100_flowerFalse11.pt' # text auto encoder
-encoder_path='/home/phamd/SelfSupervisedImageText/saved_models/birds/encG_368000.pth' #image encoder
-dec_path='/home/phamd/SelfSupervisedImageText/saved_models/birds/netG_368000.pth' #image decoder
-text_autoencoder_path = '/home/phamd/SelfSupervisedImageText/saved_models/birds/AutoEncoderDglove100_birdsTrue8.pt' # text auto encoder
-IT_GEN_PATH = 'netGIT_22000.pth' # netGIT_100.pth #this is Image t TEXt embedding generator , if not restarted
+encoder_path='/home/phamd/SelfSupervisedImageText/saved_models/flowers/encG_160000.pth' #image encoder
+dec_path='/home/phamd/SelfSupervisedImageText/saved_models/flowers/netG_160000.pth' #image decoder
+text_autoencoder_path = '/home/phamd/SelfSupervisedImageText/saved_models/flowers/AutoEncoderDglove100_flowerFalse102.pt' # text auto encoder
+IT_GEN_PATH = ''#'netGIT_33000.pth' # netGIT_100.pth #this is Image t TEXt embedding generator , if not restarted
 #from previous fails should be empty
-IT_DIS_PATH= 'netDIT.pth'
+IT_DIS_PATH= ''#'netDIT.pth' #netDIT.pth
 TI_GEN_PATH= '' #netGTI_100.pth
 TI_DIS_PATH= '' #netDTI.pth
 
-dset= 'birds'#'flowers' #'birds'
+dset= 'flowers' #'birds'
 
 if dset=='birds':
     glove_file='glove.6B'
@@ -120,7 +108,7 @@ hidden_dim = 100
 data_dir = sys.argv[1]
 
 # Batch size for training (change depending on how much memory you have)
-batch_size = 32
+batch_size = 16 #32
 # Number of epochs to train for
 num_epochs = 500#150
 #restart_epoch = 1 #restartting from failed step
@@ -141,8 +129,7 @@ wt = 1e-5
 
 
 # Detect if we have a GPU available
-# device = torch.device('cpu')
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+#device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 gpu_id = '0'
 torch.cuda.set_device(int(gpu_id))
 s_gpus = gpu_id.split(',')
@@ -155,7 +142,7 @@ gpus = [int(ix) for ix in s_gpus]
 now = datetime.datetime.now(dateutil.tz.tzlocal())
 timestamp = now.strftime('%Y_%m_%d_%H_%M_%S')
 #log_dir = 'output/%s_%s' %(cfg.DATASET_NAME, timestamp)
-log_dir =  'output/birds_2023' #'output/birds_2023_noclip'
+log_dir =  'output/flowers_2020_06_26_21_30_38'
 mkdir_p(log_dir)
 model_dir = os.path.join(log_dir, 'modeldir')
 mkdir_p(model_dir)
@@ -293,12 +280,12 @@ def define_optimizers(netGIT, netDIT,netGTI, netDTI, path):
  
 def load_network(path):
     ####################Image deoder################################
-    netG = G_NET() # mine: changed from G_NET1() to G_NET
+    netG = G_NET()
     netG.apply(weights_init)
     netG = torch.nn.DataParallel(netG, device_ids=gpus)
     #################################################################
     #########################Image to text GEN##################################
-    genIT = MAP_NET_IT1() # mine: originall was MAP_NET_IT22() MAP_NET_IT1() for no clip bird
+    genIT = MAP_NET_IT1()
     genIT.apply(weights_init)
     genIT = torch.nn.DataParallel(genIT, device_ids=gpus)
     ####################################################################
@@ -312,7 +299,7 @@ def load_network(path):
     genTI.apply(weights_init)
     genTI = torch.nn.DataParallel(genTI, device_ids=gpus)
     #########################text to IMAGE Discriminator###############
-    disTI = D_NET_IMAGE() # mine: originall was D_NET_IMAGE1()
+    disTI = D_NET_IMAGE()
     disTI.apply(weights_init)
     disTI = torch.nn.DataParallel(disTI, device_ids=gpus)
     print(disTI)
@@ -445,44 +432,12 @@ def save_model(netGIT, optimizerGIT, netDIT, optimizerDIT, netGTI, optimizerGTI,
             '%s/netDTI.pth' % model_dir)
     
     print('Save G/Ds models...count:%d'%epoch)
-
-def save_model2(netGIT, optimizerGIT, netDIT, optimizerDIT, epoch, model_dir):
-    #load_params(netG, avg_param_G)
-    #load_params(enc, avg_param_E)
-    
-    
-    
-    
-    stateGIT = {'state_dict': netGIT.state_dict(),
-             'optimizer': optimizerGIT.state_dict()}
-    torch.save(
-        stateGIT,
-        '%s/netGIT_%d.pth' % (model_dir, epoch))
-    stateDIT = {'state_dict':  netDIT.state_dict(),
-             'optimizer': optimizerDIT.state_dict()}
-    torch.save(
-            stateDIT,
-            '%s/netDIT.pth' % model_dir)
-    
-    
-    # stateGTI = {'state_dict': netGTI.state_dict(),
-    #          'optimizer': optimizerGTI.state_dict()}
-    # torch.save(
-    #     stateGTI,
-    #     '%s/netGTI_%d.pth' % (model_dir, epoch))
-    # stateDTI = {'state_dict':  netDTI.state_dict(),
-    #          'optimizer': optimizerDTI.state_dict()}
-    # torch.save(
-    #         stateDTI,
-    #         '%s/netDTI.pth' % model_dir)
-    
-    print('Save G/Ds models...count:%d'%epoch)
         
 def initialize_model(model_name, config, embeddings_matrix):
     
     model_ft= text_models.AutoEncoderD(config, embeddings_matrix)
-    # model_ft.cuda() # mine originally not commented out
-    model_ft = model_ft.to(device) # mine originally commented out
+    model_ft.cuda()
+    #model_ft = model_ft.to(device)
 
     
     dec, genIT, disIT, genTI, disTI= load_network(model_dir)
@@ -496,7 +451,7 @@ def initialize_model(model_name, config, embeddings_matrix):
     
     print("=> loading Image encoder from '{}'".format(encoder_path))
     encoder = torch.load(encoder_path)
-    enc.load_state_dict(encoder['state_dict'])
+    enc.load_state_dict(encoder['state_dict'],strict=False) # mine: add strict = False
     
     
     print("=> loading Image decoder from '{}'".format(dec_path))
@@ -532,19 +487,19 @@ def save_results(imgs_input, imgs_output, imgs_generated, text_input, text_gener
     fo =open(os.path.join(img_dir, 'output.txt'), 'a+')
     for ii, io, ig, ti, tg, to in zip(imgs_input, imgs_output, imgs_generated, text_input, text_generated, text_output):
         ii = norm_range(ii)#normalize to (0,1)
-        # io = norm_range(io)#normalize to (0,1)
-        # ig = norm_range(ig)#normalize to (0,1)
+        io = norm_range(io)#normalize to (0,1)
+        ig = norm_range(ig)#normalize to (0,1)
         ii = ii.cpu()
-        # io = io.detach().cpu()
+        io = io.detach().cpu()
         if count == -1:
             results_writer_input.write_images1(ii)
-            # results_writer_output.write_images1(io)
+            results_writer_output.write_images1(io)
         ii = ii.numpy().transpose(1,2,0) #in order to use plt.imshow the channel should be the last dimention
-        # io = io.numpy().transpose(1,2,0) # mine: originally not commented out
-        # ig = ig.detach().cpu().numpy().transpose(1,2,0)
-        # results_writer_img.write_images(io, ii) # mine: orginally not commented out
+        io = io.numpy().transpose(1,2,0)
+        ig = ig.detach().cpu().numpy().transpose(1,2,0)
+        results_writer_img.write_images(io, ii)
         results_writer_imgtxt.write_image_with_text(ii, tg)
-        # results_writer_txtimg.write_image_with_text(ig, ti) # mine: originally not commented out
+        results_writer_txtimg.write_image_with_text(ig, ti)
         print(ti,'\t',tg, file = fg)
         print(ti,'\t',to, file = fo)
     fg.close()
@@ -563,7 +518,7 @@ class ImageTextTrainer(object):
         self.disTI = disTI
         self.dataloaders = dataloaders
         self.num_epochs = num_epochs
-        self.criterion = nn.BCELoss() #nn.BCEWithLogitsLoss() #mine: orignally was nn.BCELoss()
+        self.criterion = nn.BCELoss()
         self.batch_size = batch_size
         self.max_epoch= num_epochs
         self.num_batches = len(self.dataloaders['train'])
@@ -614,30 +569,30 @@ class ImageTextTrainer(object):
         
         
        #######################For TI Training#################### 
-        # netDTI, optDTI = self.disTI, self.optimizerDTI
-        # #print('netDTI:', netDTI)
-        # #print('self.optimizerDTI:', self.optimizerDTI)
-        # batch_size = self.img_embedding.size(0)
+        netDTI, optDTI = self.disTI, self.optimizerDTI
+        #print('netDTI:', netDTI)
+        #print('self.optimizerDTI:', self.optimizerDTI)
+        batch_size = self.img_embedding.size(0)
         
-        # real_embedding_image = self.img_embedding
-        # #print('real image emb shape:' , real_embedding.shape)
-        # fake_embedding_image = self.img_embedding_fake
-        # #print('fake image emb shape:' , fake_embedding.shape)
-        # #
-        # netDTI.zero_grad()
-        # # Forward
-        # real_labels = self.real_labels[:batch_size]
-        # fake_labels = self.fake_labels[:batch_size]
-        # # for real
-        # real_logitsTI = netDTI(real_embedding_image.detach())
-        # fake_logitsTI = netDTI(fake_embedding_image.detach())
-        # #
-        # errD_realTI = criterion(real_logitsTI[0], real_labels)
-        # errD_fakeTI = criterion(fake_logitsTI[0], fake_labels)
-        # #errD_realTI = -torch.mean(real_logitsTI[0])
-        # #errD_fakeTI = torch.mean(fake_logitsTI[0])
+        real_embedding_image = self.img_embedding
+        #print('real image emb shape:' , real_embedding.shape)
+        fake_embedding_image = self.img_embedding_fake
+        #print('fake image emb shape:' , fake_embedding.shape)
+        #
+        netDTI.zero_grad()
+        # Forward
+        real_labels = self.real_labels[:batch_size]
+        fake_labels = self.fake_labels[:batch_size]
+        # for real
+        real_logitsTI = netDTI(real_embedding_image.detach())
+        fake_logitsTI = netDTI(fake_embedding_image.detach())
+        #
+        errD_realTI = criterion(real_logitsTI[0], real_labels)
+        errD_fakeTI = criterion(fake_logitsTI[0], fake_labels)
+        #errD_realTI = -torch.mean(real_logitsTI[0])
+        #errD_fakeTI = torch.mean(fake_logitsTI[0])
        
-        # errDTI = errD_realTI + errD_fakeTI
+        errDTI = errD_realTI + errD_fakeTI
         ###########################################################
         #if True:
         if (count +1)% self.mod != 0 :
@@ -652,22 +607,22 @@ class ImageTextTrainer(object):
             optDIT.step()
             
         #if True:
-        # mod2= 5
-        # #if (count +1)%self.mod != 0 :
-        # if (count +1)%mod2 != 0 :
-        # #if self.train_dis2 == True:
-        # # backward
-        #     errDTI.backward()
-        #     torch.nn.utils.clip_grad_norm_(netDTI.parameters(), 5.00)
-        # # update parameters
-        #     optDTI.step()
-        #     for p in netDTI.parameters():
-        #         p.data.clamp_(-0.01, 0.01)
-        # # log
-        # if flag == 0:
-        #     self.writer.add_scalar('DIT_loss', errDIT.item(), count)
-        #     self.writer.add_scalar('DTI_loss', errDTI.item(), count)
-        return errDIT #, errDTI
+        mod2= 5
+        #if (count +1)%self.mod != 0 :
+        if (count +1)%mod2 != 0 :
+        #if self.train_dis2 == True:
+        # backward
+            errDTI.backward()
+            torch.nn.utils.clip_grad_norm_(netDTI.parameters(), 5.00)
+        # update parameters
+            optDTI.step()
+            for p in netDTI.parameters():
+                p.data.clamp_(-0.01, 0.01)
+        # log
+        if flag == 0:
+            self.writer.add_scalar('DIT_loss', errDIT.item(), count)
+            self.writer.add_scalar('DTI_loss', errDTI.item(), count)
+        return errDIT, errDTI
 
     def train_Gnet(self, count):
         
@@ -683,7 +638,7 @@ class ImageTextTrainer(object):
         real_labels = self.real_labels[:batch_size]
         outputs = self.disIT(self.text_embedding_fake)
         errGIT_total= criterion(outputs[0], real_labels)
-        if flag == 0: # mine
+        if flag == 0:
             self.writer.add_scalar('GIT_loss', errGIT_total.item(), count)
             
         if errGIT_total > 1.5:
@@ -705,38 +660,38 @@ class ImageTextTrainer(object):
             #for name, param in self.gen.named_parameters():
              #   print (name, param.data)
         #####################for TI############################
-        # self.genTI.zero_grad()
-        # errGTI_total = 0
-        # batch_size = self.img_embedding.size(0)
+        self.genTI.zero_grad()
+        errGTI_total = 0
+        batch_size = self.img_embedding.size(0)
        
-        # real_labels = self.real_labels[:batch_size]
-        # outputs = self.disTI(self.img_embedding_fake)
-        # errGTI_total= criterion(outputs[0], real_labels)
-        # #errGTI_total= -torch.mean(outputs[0])
-        # if flag == 0: 
-        #     self.writer.add_scalar('GTI_loss', errGTI_total.item(), count)
+        real_labels = self.real_labels[:batch_size]
+        outputs = self.disTI(self.img_embedding_fake)
+        errGTI_total= criterion(outputs[0], real_labels)
+        #errGTI_total= -torch.mean(outputs[0])
+        if flag == 0:
+            self.writer.add_scalar('GTI_loss', errGTI_total.item(), count)
             
             
-        # if errGTI_total > 1.5:
-        #     self.train_gen2= True
-        #     mod2 = 1
-        # elif errGTI_total <1.0 :
-        #     self.train_gen2 = False
-        #     mod2 = self.mod
+        if errGTI_total > 1.5:
+            self.train_gen2= True
+            mod2 = 1
+        elif errGTI_total <1.0 :
+            self.train_gen2 = False
+            mod2 = self.mod
             
-        # mod2= 5
+        mod2= 5
             
-        # #if True:
-        # if (count +1)% mod2  ==0:
-        # #if self.train_dis2 == False or (self.train_gen2 == True):
-        #     errGTI_total.backward()
-        #     torch.nn.utils.clip_grad_norm_(self.genTI.parameters(), 5.00)
-        #     self.optimizerGTI.step()
-        #     #print("GEN param:")
-        #     #for name, param in self.gen.named_parameters():
-        #      #   print (name, param.data)
+        #if True:
+        if (count +1)% mod2  ==0:
+        #if self.train_dis2 == False or (self.train_gen2 == True):
+            errGTI_total.backward()
+            torch.nn.utils.clip_grad_norm_(self.genTI.parameters(), 5.00)
+            self.optimizerGTI.step()
+            #print("GEN param:")
+            #for name, param in self.gen.named_parameters():
+             #   print (name, param.data)
         
-        return errGIT_total #, errGTI_total
+        return errGIT_total, errGTI_total
     
     def evaluate(self):
         ecount=0
@@ -745,14 +700,12 @@ class ImageTextTrainer(object):
         self.dec.eval()
         self.model.eval()
         self.genIT.eval()
-        # self.genTI.eval()
+        self.genTI.eval()
         ############################################################
         nz = cfg.GAN.Z_DIM
         #fixed_noise1 = Variable(torch.FloatTensor(self.batch_size, nz).normal_(0, 1))
         fixed_noise2 = Variable(torch.FloatTensor(self.batch_size, nz).normal_(0, 1))
         #fixed_noise3 = Variable(torch.FloatTensor(self.batch_size, 20).normal_(0, 1))
-        similarity_score_list = []
-        bleu_score_list = []
         if True:
             #fixed_noise1 = fixed_noise1.cuda()
             fixed_noise2 = fixed_noise2.cuda()
@@ -769,8 +722,9 @@ class ImageTextTrainer(object):
                 captions = captions.cuda()
                 lengths = lengths.cuda()
             
-                # self.img_embedding = self.enc(inp0)
-                self.img_embedding = clip_model.encode_image(inp0).cpu() #self.enc(inp0)
+                #self.img_embedding = self.enc(inp0)
+                # self.img_embedding, _, _ = self.enc(inp0)
+                self.img_embedding = clip_model.encode_image(inp0).cpu()
                 self.text_embedding = self.model.rnn(pass_type='encode',batch_positions=captions, text_length=lengths)
 
             
@@ -786,62 +740,19 @@ class ImageTextTrainer(object):
                 _, indices_o = self.model.rnn(pass_type ='generate', hidden=self.text_embedding, text_length=length1, batch_size=N)
             ###############We can use original image or output of image decoder#############
                 #fake_imgs_o, _, _ = self.dec(n2, self.img_embedding.detach())
-                # fake_imgs_o = self.dec(n2, self.img_embedding.detach())
-                # #self.img_embedding_fake = self.genTI(n3, self.text_embedding[0].detach())
-                # self.img_embedding_fake = self.genTI(self.text_embedding[0].detach())
-                # #fake_imgs_g, _, _ = self.dec(n2, self.img_embedding_fake.detach())
-                # fake_imgs_g = self.dec(n2, self.img_embedding_fake.detach())
-                fake_imgs_o = [[0],[0],[0]] # place holder for save results
-                fake_imgs_g = [[0],[0],[0]] # place holder for save results
+                fake_imgs_o = self.dec(n2, self.img_embedding.detach())
+                #self.img_embedding_fake = self.genTI(n3, self.text_embedding[0].detach())
+                self.img_embedding_fake = self.genTI(self.text_embedding[0].detach())
+                #fake_imgs_g, _, _ = self.dec(n2, self.img_embedding_fake.detach())
+                fake_imgs_g = self.dec(n2, self.img_embedding_fake.detach())
                 texts_i = vocab.decode_positions(captions)
                 texts_g = vocab.decode_positions(indices_g)
                 texts_o = vocab.decode_positions(indices_o)
-
-                similarity_score = []
-                # Sample references and candidate sentences
-                references = texts_i
-                candidates = texts_g
-
-                # Tokenize the sentences
-                references_tokens = [[ref.split()] for ref in references]
-                candidates_tokens = [candidate.split() for candidate in candidates]
-
-                # Calculate BLEU score for multiple sentences
-                bleu_score = corpus_bleu(references_tokens, candidates_tokens)
-                for sentence1,sentence2 in zip(texts_i, texts_g):
-
-                    # Create a TF-IDF vectorizer
-                    vectorizer = TfidfVectorizer()
-
-                    # Fit and transform the sentences
-                    tfidf_matrix = vectorizer.fit_transform([sentence1, sentence2])
-
-                    # Calculate cosine similarity
-                    cosine_sim = cosine_similarity(tfidf_matrix, tfidf_matrix)
-                    similarity_score.append(cosine_sim[0][1])
-                    # calculate BLEU score
-#                     reference_tokens = [nltk.word_tokenize(ref) for ref in sentence1]
-#                     candidate_tokens = nltk.word_tokenize(sentence2)
-
-                    # Calculate BLEU score
-                    # bleu_score.append(sentence_bleu(reference_tokens, candidate_tokens))
-                    
-                print('similarity_score',sum(similarity_score)/len(similarity_score))
-                similarity_score_list.append(sum(similarity_score)/len(similarity_score))
-                print('BLEU score', bleu_score)
-                bleu_score_list.append(bleu_score)
                 if ecount % 1 == 0:
-                    print('save results')
                     save_results(inputs[2], fake_imgs_o[2], fake_imgs_g[2], texts_i, texts_g, texts_o, -1)
-                if ecount >= 50:
-                    with open('birds_with_clip', 'wb') as file:
-                        pickle.dump(similarity_score_list, file)
-                    with open('BLEU birds_with_clip', 'wb') as file:
-                        pickle.dump(bleu_score_list, file)
-                    break
                 ecount = ecount +1
-                # del fake_imgs_o, fake_imgs_g, texts_i, texts_g, texts_o
-                # del self.img_embedding, self.img_embedding_fake, self.text_embedding, self.text_embedding_fake
+                del fake_imgs_o, fake_imgs_g, texts_i, texts_g, texts_o
+                del self.img_embedding, self.img_embedding_fake, self.text_embedding, self.text_embedding_fake
                 
         print("#################Evaluation complete#######################################")
 
@@ -854,6 +765,7 @@ class ImageTextTrainer(object):
         
 
         self.optimizerGIT, self.optimizerDIT, self.optimizerGTI, self.optimizerDTI, count = define_optimizers(self.genIT, self.disIT, self.genTI, self.disTI, self.model_dir)
+
 
         self.real_labels = Variable(torch.FloatTensor(self.batch_size).fill_(1))
         self.fake_labels = Variable(torch.FloatTensor(self.batch_size).fill_(0))
@@ -874,8 +786,8 @@ class ImageTextTrainer(object):
         self.model.eval()
         self.genIT.train()
         self.disIT.train()
-        # self.genTI.train()
-        # self.disTI.train()
+        self.genTI.train()
+        self.disTI.train()
         ############################################################
         nr_train_gen = 1
         nr_train_dis = 1
@@ -920,7 +832,7 @@ class ImageTextTrainer(object):
                 noise2_ = noise2[:N]
                 n1 = fixed_noise1[:N]
                 #n2 = fixed_noise2[:N]
-                #n3 = fixed_noise3[:N]
+                n3 = fixed_noise3[:N]
                 #print('input shape:', N)
                 captions, lengths= adjust_padding(captions, lengths)
                 #print('captions shape:', captions.shape)
@@ -933,8 +845,10 @@ class ImageTextTrainer(object):
                 ##########################################################
                 # (1) Image embedding from pretrained model
                 ##########################################################
-                self.img_embedding = clip_model.encode_image(inp0).cpu() #self.enc(inp0) # mine: originally this one was commented out 
-                # self.img_embedding, _, _ = self.enc(inp0) # mine originally this one was not commented out
+                #self.img_embedding = self.enc(inp0)
+                print('inp0',inp0)
+                # self.img_embedding, _, _ = self.enc(inp0)
+                self.img_embedding = clip_model.encode_image(inp0).cpu()
                 #print('image emb shape:' , self.img_embedding.shape)
                 
                 ##########################################################
@@ -966,18 +880,16 @@ class ImageTextTrainer(object):
                 #######################################################
                 # (2) Update D network
                 ######################################################
-                # errDIT_total, errDTI_total = self.train_Dnet(count)
-                errDIT_total = self.train_Dnet(count)
+                errDIT_total, errDTI_total = self.train_Dnet(count)
                 errorDIT_list.append(errDIT_total.item())
-                # errorDTI_list.append(errDTI_total.item())
+                errorDTI_list.append(errDTI_total.item())
                 
                 #######################################################
                 # (3) Update G network: maximize log(D(G(z)))
                 ######################################################
-                # errGIT_total, errGTI_total = self.train_Gnet(count)
-                errGIT_total = self.train_Gnet(count)
+                errGIT_total, errGTI_total = self.train_Gnet(count)
                 errorGIT_list.append(errGIT_total.item())
-                # errorGTI_list.append(errGTI_total.item())
+                errorGTI_list.append(errGTI_total.item())
                 #for p, avg_p in zip(self.genIT.parameters(), avg_param_GIT):
                  #   avg_p.mul_(0.999).add_(0.001, p.data)
                 #for p, avg_p in zip(self.genTI.parameters(), avg_param_GTI):
@@ -988,26 +900,16 @@ class ImageTextTrainer(object):
                 # for inception score
                 
                 count = count + 1
-                if count % cfg.TRAIN.SNAPSHOT_INTERVAL == 0:
-                # if count % 2 == 0:
-                    # save_model(self.genIT, self.optimizerGIT, self.disIT, self.optimizerDIT, self.genTI, self.optimizerGTI, self.disTI, self.optimizerDTI, count, self.model_dir)
-                    save_model2(self.genIT, self.optimizerGIT, self.disIT, self.optimizerDIT, count, self.model_dir)
-                    GIT_err = 'GIT_error.pkl'
-                    DIT_err = 'DIT_error.pkl'
 
-                    # Save the list to a file
-                    with open(GIT_err, 'wb') as file:
-                        pickle.dump(errorGIT_list, file)
-                    with open(DIT_err, 'wb') as file:
-                        pickle.dump(errorDIT_list, file)
-                    print('save error list')
+                if count % cfg.TRAIN.SNAPSHOT_INTERVAL == 0:
+                #if count % 10 == 0:
+                    save_model(self.genIT, self.optimizerGIT, self.disIT, self.optimizerDIT, self.genTI, self.optimizerGTI, self.disTI, self.optimizerDTI, count, self.model_dir)
                     # Save images
                     #backup_para = copy_G_params(self.netG)
                     #backup_para_E = copy_G_params(self.enc)
                     #load_params(self.netG, avg_param_G)
                     #load_params(self.enc, avg_param_E)
                     #
-                    print('save')
                     with torch.no_grad():
                         #self.text_embedding_fake = self.genIT(n2, self.img_embedding.detach())
                         self.text_embedding_fake = self.genIT(self.img_embedding.detach())
@@ -1024,14 +926,14 @@ class ImageTextTrainer(object):
                         texts_g = vocab.decode_positions(indices_g)
                         texts_o = vocab.decode_positions(indices_o)
                     ############################################################
-                        # fake_imgs_o, _, _ = self.dec(n1, self.img_embedding.detach())
-                        # fake_imgs_o = self.dec(n1, self.img_embedding.detach())
-                        # # self.img_embedding_fake = self.genTI(n3, self.text_embedding[0].detach())
-                        # self.img_embedding_fake = self.genTI(self.text_embedding[0].detach())
-                        # # fake_imgs_g, _, _ = self.dec(n1, self.img_embedding_fake.detach())
-                        # fake_imgs_g = self.dec(n1, self.img_embedding_fake.detach())  
-                        fake_imgs_o = [[0],[0],[0]] # place holder for save results
-                        fake_imgs_g = [[0],[0],[0]] # place holder for save results
+                        #fake_imgs_o, _, _ = self.dec(n1, self.img_embedding.detach())
+                        fake_imgs_o = self.dec(n1, self.img_embedding.detach())
+                        # self.img_embedding_fake = self.genTI(n3, self.text_embedding[0].detach())
+                        self.img_embedding_fake = self.genTI(self.text_embedding[0].detach())
+                        # fake_imgs_g, _, _ = self.dec(n1, self.img_embedding_fake.detach())
+                        fake_imgs_g = self.dec(n1, self.img_embedding_fake.detach())
+                    
+                    
                     
                     
                         save_results(inputs[2], fake_imgs_o[2], fake_imgs_g[2], texts_i, texts_g, texts_o, count)
@@ -1045,31 +947,21 @@ class ImageTextTrainer(object):
               #        '''  # D(real): %.4f D(wrong):%.4f  D(fake) %.4f
                #   % ((epoch +1), self.max_epoch, self.num_batches,
                 #     errD_total.item(), errG_total.item(), end_t - start_t))
-                # Loss_DIT: %.2f Loss_GIT: %.2f Loss_DTI: %.2f Loss_GTI: %.2f Time: %.2fs
             print('''[%d/%d][%d]
-                         Loss_DIT: %.2f Loss_GIT: %.2f Time: %.2fs
+                         Loss_DIT: %.2f Loss_GIT: %.2f Loss_DTI: %.2f Loss_GTI: %.2f Time: %.2fs
                       '''  # D(real): %.4f D(wrong):%.4f  D(fake) %.4f
                   % ((epoch +1), self.max_epoch, self.num_batches,
-                    #  sum(errorDIT_list)/len(errorDIT_list), sum(errorGIT_list)/len(errorGIT_list),
-                     errDIT_total.item(), errGIT_total.item(),
-                    #  sum(errorDTI_list)/len(errorDTI_list), sum(errorGTI_list)/len(errorGTI_list),
+                     sum(errorDIT_list)/len(errorDIT_list), sum(errorGIT_list)/len(errorGIT_list),
+                     sum(errorDTI_list)/len(errorDTI_list), sum(errorGTI_list)/len(errorGTI_list),
                      end_t - start_t))
 
         #save_model(self.enc, avg_param_E, self.netG, self.optimizerG, avg_param_G, self.netsD, self.optimizersD, count, self.model_dir)
-        # save_model(self.genIT, self.optimizerGIT, self.disIT, self.optimizerDIT, self.genTI, self.optimizerGTI, self.disTI, self.optimizerDTI, count, self.model_dir)
-        save_model2(self.genIT, self.optimizerGIT, self.disIT, self.optimizerDIT, count, self.model_dir)
+        save_model(self.genIT, self.optimizerGIT, self.disIT, self.optimizerDIT, self.genTI, self.optimizerGTI, self.disTI, self.optimizerDTI, count, self.model_dir)
+         
         
         
         print('####################training completed#########################')
-        GIT_err = 'GIT_error.pkl'
-        DIT_err = 'DIT_error.pkl'
-
-        # Save the list to a file
-        with open(GIT_err, 'wb') as file:
-            pickle.dump(errorGIT_list, file)
-        with open(DIT_err, 'wb') as file:
-            pickle.dump(errorDIT_list, file)
-        print('save error list')        
+        
     
 
     
@@ -1101,14 +993,10 @@ print("Initializing Datasets and Dataloaders...")
 # Create training and validation data
 if dset=='birds':
     # text_datasets = {x: BirdsDataset1(os.path.join(data_dir), transform=data_transforms, split=x) for x in ['train', 'val']}
-    # with open('birds_text_datasets.pkl', 'wb') as file:
-    #     pickle.dump(text_datasets, file)
     with open('birds_text_datasets.pkl','rb') as file:
         text_datasets=pickle.load(file)
 else:
     # text_datasets = {x: FlowersDataset1(os.path.join(data_dir), transform=data_transforms, split=x) for x in ['train', 'val']}
-    # with open('flowers_text_datasets.pkl', 'wb') as file:
-    #     pickle.dump(text_datasets, file)
     with open('flowers_text_datasets.pkl', 'rb') as file:
         text_datasets = pickle.load(file)
 ds = text_datasets['train']
@@ -1121,7 +1009,7 @@ print("Loading vocabulary, embedding matrix from trained text model.....")
 file_ematrix = open(embedding_matrx_path, 'rb') 
 file_vocab_i2t = open(vocab_i2t_path, 'rb')
 file_vocab_t2i = open(vocab_t2i_path, 'rb')
-embeddings_matrix = pickle.load(file_ematrix) # shape (400004,100)
+embeddings_matrix = pickle.load(file_ematrix)
 vocab.i2t= pickle.load(file_vocab_i2t)
 vocab.t2i= pickle.load(file_vocab_t2i)
 text_datasets['val'].vocab_builder.i2t =vocab.i2t
@@ -1129,12 +1017,12 @@ text_datasets['val'].vocab_builder.t2i = vocab.t2i
 ############################################################################
 
 # Create training and validation dataloaders
-dataloaders_dict = {x: DataLoader(text_datasets[x], batch_size=batch_size, shuffle=False, num_workers=0) for x in ['train', 'val']}
-
-# vocab.t2i['<PAD>'] = 0
-# vocab.t2i['<SOS>'] = 1
-# vocab.t2i['<EOS>'] = 2
-# vocab.t2i['<UNK>'] = 3
+dataloaders_dict = {x: DataLoader(text_datasets[x], batch_size=batch_size, shuffle=True, num_workers=0) for x in ['train', 'val']}
+# dataloaders_dict = pickle.load('dataloader.pkl')
+vocab.t2i['<PAD>'] = 0
+vocab.t2i['<SOS>'] = 1
+vocab.t2i['<EOS>'] = 2
+vocab.t2i['<UNK>'] = 3
 
 config = {  'emb_dim': embedding_dim,
                 'hid_dim': hidden_dim//2, #birectional is used so hidden become double
@@ -1145,6 +1033,7 @@ config = {  'emb_dim': embedding_dim,
                 'eos': vocab.eos_pos(),
                 'pad': vocab.pad_pos(),
              }
+
 model_ft, enc, dec, genIT, disIT, genTI, disTI = initialize_model(model_name, config, embeddings_matrix)
 
 #defining optimizers for Generator and discriminator
@@ -1157,8 +1046,9 @@ model_ft, enc, dec, genIT, disIT, genTI, disTI = initialize_model(model_name, co
 #criterion = loss_function
 device = torch.device('cuda:0')
 clip_model, preprocess = clip.load("ViT-B/32", device=device, jit=False)
+
 IT_model = ImageTextTrainer(model_ft, enc, dec, genIT, disIT, genTI, disTI, dataloaders_dict, num_epochs, log_dir)
 
 # Train and evaluate
-# IT_model.train()
+IT_model.train()
 IT_model.evaluate()

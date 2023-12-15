@@ -29,11 +29,8 @@ from tempfile import mkdtemp
 import pickle
 from copy import deepcopy
 from torch.nn.parallel import DataParallel
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-import nltk
-nltk.download('punkt')
-from nltk.translate.bleu_score import sentence_bleu, corpus_bleu
+import skimage.io as io
+from PIL import Image
 
 print("PyTorch Version: ",torch.__version__)
 print("Torchvision Version: ",torchvision.__version__)
@@ -94,7 +91,7 @@ def adjust_padding(cap, len1):
 encoder_path='/home/phamd/SelfSupervisedImageText/saved_models/birds/encG_368000.pth' #image encoder
 dec_path='/home/phamd/SelfSupervisedImageText/saved_models/birds/netG_368000.pth' #image decoder
 text_autoencoder_path = '/home/phamd/SelfSupervisedImageText/saved_models/birds/AutoEncoderDglove100_birdsTrue8.pt' # text auto encoder
-IT_GEN_PATH = 'netGIT_22000.pth' # netGIT_100.pth #this is Image t TEXt embedding generator , if not restarted
+IT_GEN_PATH = 'netGIT_22000.pth' #this is Image t TEXt embedding generator , if not restarted
 #from previous fails should be empty
 IT_DIS_PATH= 'netDIT.pth'
 TI_GEN_PATH= '' #netGTI_100.pth
@@ -155,7 +152,8 @@ gpus = [int(ix) for ix in s_gpus]
 now = datetime.datetime.now(dateutil.tz.tzlocal())
 timestamp = now.strftime('%Y_%m_%d_%H_%M_%S')
 #log_dir = 'output/%s_%s' %(cfg.DATASET_NAME, timestamp)
-log_dir =  'output/birds_2023' #'output/birds_2023_noclip'
+log_dir =  'output/birds_2023_12_11' 
+# log_dir = 'output/flowers_2020_06_26_21_30_38'
 mkdir_p(log_dir)
 model_dir = os.path.join(log_dir, 'modeldir')
 mkdir_p(model_dir)
@@ -751,8 +749,6 @@ class ImageTextTrainer(object):
         #fixed_noise1 = Variable(torch.FloatTensor(self.batch_size, nz).normal_(0, 1))
         fixed_noise2 = Variable(torch.FloatTensor(self.batch_size, nz).normal_(0, 1))
         #fixed_noise3 = Variable(torch.FloatTensor(self.batch_size, 20).normal_(0, 1))
-        similarity_score_list = []
-        bleu_score_list = []
         if True:
             #fixed_noise1 = fixed_noise1.cuda()
             fixed_noise2 = fixed_noise2.cuda()
@@ -762,15 +758,21 @@ class ImageTextTrainer(object):
                 inp0 = uinputs[0]
                 inp0= inp0.cuda()
                 N = inp0.size(0)
+                print('N', N)
                 #n1 = fixed_noise1[:N]
                 n2 = fixed_noise2[:N]
                 #n3 = fixed_noise3[:N]
                 captions, lengths= adjust_padding(captions, lengths)
                 captions = captions.cuda()
                 lengths = lengths.cuda()
+
+                filename = f"./data/102flowers/images/image_00001.jpg"
+                image = io.imread(filename)
+                image = preprocess(Image.fromarray(image)).unsqueeze(0).to(device)
             
-                # self.img_embedding = self.enc(inp0)
-                self.img_embedding = clip_model.encode_image(inp0).cpu() #self.enc(inp0)
+                # self.img_embedding = clip_model.encode_image(image).cpu() #self.enc(inp0)
+                self.img_embedding = self.enc(image)
+                # self.img_embedding, _, _ =  self.enc(inp0)
                 self.text_embedding = self.model.rnn(pass_type='encode',batch_positions=captions, text_length=lengths)
 
             
@@ -787,65 +789,90 @@ class ImageTextTrainer(object):
             ###############We can use original image or output of image decoder#############
                 #fake_imgs_o, _, _ = self.dec(n2, self.img_embedding.detach())
                 # fake_imgs_o = self.dec(n2, self.img_embedding.detach())
-                # #self.img_embedding_fake = self.genTI(n3, self.text_embedding[0].detach())
+                #self.img_embedding_fake = self.genTI(n3, self.text_embedding[0].detach())
                 # self.img_embedding_fake = self.genTI(self.text_embedding[0].detach())
-                # #fake_imgs_g, _, _ = self.dec(n2, self.img_embedding_fake.detach())
+                #fake_imgs_g, _, _ = self.dec(n2, self.img_embedding_fake.detach())
                 # fake_imgs_g = self.dec(n2, self.img_embedding_fake.detach())
-                fake_imgs_o = [[0],[0],[0]] # place holder for save results
-                fake_imgs_g = [[0],[0],[0]] # place holder for save results
                 texts_i = vocab.decode_positions(captions)
                 texts_g = vocab.decode_positions(indices_g)
                 texts_o = vocab.decode_positions(indices_o)
+                print(texts_g)
 
-                similarity_score = []
-                # Sample references and candidate sentences
-                references = texts_i
-                candidates = texts_g
-
-                # Tokenize the sentences
-                references_tokens = [[ref.split()] for ref in references]
-                candidates_tokens = [candidate.split() for candidate in candidates]
-
-                # Calculate BLEU score for multiple sentences
-                bleu_score = corpus_bleu(references_tokens, candidates_tokens)
-                for sentence1,sentence2 in zip(texts_i, texts_g):
-
-                    # Create a TF-IDF vectorizer
-                    vectorizer = TfidfVectorizer()
-
-                    # Fit and transform the sentences
-                    tfidf_matrix = vectorizer.fit_transform([sentence1, sentence2])
-
-                    # Calculate cosine similarity
-                    cosine_sim = cosine_similarity(tfidf_matrix, tfidf_matrix)
-                    similarity_score.append(cosine_sim[0][1])
-                    # calculate BLEU score
-#                     reference_tokens = [nltk.word_tokenize(ref) for ref in sentence1]
-#                     candidate_tokens = nltk.word_tokenize(sentence2)
-
-                    # Calculate BLEU score
-                    # bleu_score.append(sentence_bleu(reference_tokens, candidate_tokens))
-                    
-                print('similarity_score',sum(similarity_score)/len(similarity_score))
-                similarity_score_list.append(sum(similarity_score)/len(similarity_score))
-                print('BLEU score', bleu_score)
-                bleu_score_list.append(bleu_score)
-                if ecount % 1 == 0:
-                    print('save results')
-                    save_results(inputs[2], fake_imgs_o[2], fake_imgs_g[2], texts_i, texts_g, texts_o, -1)
-                if ecount >= 50:
-                    with open('birds_with_clip', 'wb') as file:
-                        pickle.dump(similarity_score_list, file)
-                    with open('BLEU birds_with_clip', 'wb') as file:
-                        pickle.dump(bleu_score_list, file)
-                    break
+                # if ecount % 1 == 0:
+                #     save_results(inputs[2], fake_imgs_o[2], fake_imgs_g[2], texts_i, texts_g, texts_o, -1)
                 ecount = ecount +1
                 # del fake_imgs_o, fake_imgs_g, texts_i, texts_g, texts_o
                 # del self.img_embedding, self.img_embedding_fake, self.text_embedding, self.text_embedding_fake
                 
         print("#################Evaluation complete#######################################")
 
-        
+    def evaluate2(self, img_path):
+        ecount=0
+        ######setting in eval mode##########################
+        self.enc.eval()
+        self.dec.eval()
+        self.model.eval()
+        self.genIT.eval()
+        # self.genTI.eval()
+        ############################################################
+        nz = cfg.GAN.Z_DIM
+        #fixed_noise1 = Variable(torch.FloatTensor(self.batch_size, nz).normal_(0, 1))
+        fixed_noise2 = Variable(torch.FloatTensor(self.batch_size, nz).normal_(0, 1))
+        #fixed_noise3 = Variable(torch.FloatTensor(self.batch_size, 20).normal_(0, 1))
+        if True:
+            #fixed_noise1 = fixed_noise1.cuda()
+            fixed_noise2 = fixed_noise2.cuda()
+            #fixed_noise3 = fixed_noise3.cuda()
+        # for uinputs, inputs,_, labels, captions, lengths in self.dataloaders['val']:
+        #     with torch.no_grad():
+        #         inp0 = uinputs[0]
+        #         inp0= inp0.cuda()
+        #         N = inp0.size(0)
+        #         #n1 = fixed_noise1[:N]
+        #         n2 = fixed_noise2[:N]
+        #         #n3 = fixed_noise3[:N]
+        #         captions, lengths= adjust_padding(captions, lengths)
+        #         captions = captions.cuda()
+        #         lengths = lengths.cuda()
+
+        # filename = f"./data/102flowers/images/image_00001.jpg"
+        image = io.imread(img_path)
+        image = preprocess(Image.fromarray(image)).unsqueeze(0).to(device)
+        N = 32 #image.size(0)
+        self.img_embedding = clip_model.encode_image(image).cpu() #self.enc(inp0)
+        # self.img_embedding = self.enc(image)
+        # self.img_embedding, _, _ =  self.enc(inp0)
+        # self.text_embedding = self.model.rnn(pass_type='encode',batch_positions=captions, text_length=lengths)
+
+            
+                #self.text_embedding_fake = self.genIT(n1, self.img_embedding.detach())
+        self.text_embedding_fake = self.genIT(self.img_embedding.detach())
+        temb = self.text_embedding_fake,
+            
+            ###################generated text from Image##################################
+        length1 = [max_len]*N #taking maximum length
+        length1= torch.LongTensor(length1)
+        _, indices_g = self.model.rnn(pass_type ='generate', hidden=temb, text_length=length1, batch_size=N)
+    ########################below verification for original encoded output#####################
+        # _, indices_o = self.model.rnn(pass_type ='generate', hidden=self.text_embedding, text_length=length1, batch_size=N)
+            ###############We can use original image or output of image decoder#############
+                #fake_imgs_o, _, _ = self.dec(n2, self.img_embedding.detach())
+                # fake_imgs_o = self.dec(n2, self.img_embedding.detach())
+                #self.img_embedding_fake = self.genTI(n3, self.text_embedding[0].detach())
+                # self.img_embedding_fake = self.genTI(self.text_embedding[0].detach())
+                #fake_imgs_g, _, _ = self.dec(n2, self.img_embedding_fake.detach())
+                # fake_imgs_g = self.dec(n2, self.img_embedding_fake.detach())
+                # texts_i = vocab.decode_positions(captions)
+        texts_g = vocab.decode_positions(indices_g)
+                # texts_o = vocab.decode_positions(indices_o)
+
+                # if ecount % 1 == 0:
+                #     save_results(inputs[2], fake_imgs_o[2], fake_imgs_g[2], texts_i, texts_g, texts_o, -1)
+                # ecount = ecount +1
+                # del fake_imgs_o, fake_imgs_g, texts_i, texts_g, texts_o
+                # del self.img_embedding, self.img_embedding_fake, self.text_embedding, self.text_embedding_fake
+                
+        return texts_g[2]   
 
     def train(self):
         #avg_param_GIT = copy_G_params(self.genIT)
@@ -1129,7 +1156,7 @@ text_datasets['val'].vocab_builder.t2i = vocab.t2i
 ############################################################################
 
 # Create training and validation dataloaders
-dataloaders_dict = {x: DataLoader(text_datasets[x], batch_size=batch_size, shuffle=False, num_workers=0) for x in ['train', 'val']}
+dataloaders_dict = {x: DataLoader(text_datasets[x], batch_size=batch_size, shuffle=True, num_workers=0) for x in ['train', 'val']}
 
 # vocab.t2i['<PAD>'] = 0
 # vocab.t2i['<SOS>'] = 1
@@ -1161,4 +1188,6 @@ IT_model = ImageTextTrainer(model_ft, enc, dec, genIT, disIT, genTI, disTI, data
 
 # Train and evaluate
 # IT_model.train()
+# filename = f"./data/birds/CUB_200_2011/images/001.Black_footed_Albatross/Black_Footed_Albatross_0001_796111.jpg"
+# print(IT_model.evaluate2(filename))
 IT_model.evaluate()
